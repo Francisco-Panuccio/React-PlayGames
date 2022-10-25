@@ -1,0 +1,88 @@
+.headerGeneral {
+    background-color: #05080C;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 11rem;
+}
+
+.headerTitle {
+    font-family: 'Silkscreen', cursive;
+    color: #F7F7F7;
+    font-size: 3.2em;
+}
+
+.listas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #05080C;
+        div {
+            height: 9rem;
+            border-right: #EAEAEA solid .1rem;
+            border-left: #EAEAEA solid .1rem;
+                li {
+                    margin: 4rem 9rem; 
+                }
+        }
+}
+
+.playTitle, .nintendoTitle, .xboxTitle {
+    border: #EAEAEA solid .1rem;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    color: #EAEAEA;
+    padding: .3rem 1rem;
+}
+
+.playTitle {
+    background-color: #0070D1;
+    font-family: 'Zrnic', sans-serif;
+}
+
+.nintendoTitle {
+    background-color: #E60012;
+    font-family: 'Pretendo', sans-serif;
+    font-size: 1.2rem;                                              
+}
+
+.xboxTitle {
+    background-color: #107B10;
+    font-family: 'X360 by Redge', sans-serif;
+    padding: .2rem 2rem;
+}
+
+.carro {
+    :hover {
+        box-shadow: 1px 1px 15px 5px #FFFFFF;
+    }
+}
+
+.carritoBoton {
+    background-color: #F7F7F7;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    width: 4rem;
+    padding: .2rem;
+    position: relative;
+}
+
+.iconoCarrito {
+    width: 2rem;
+    height: 2rem;
+}
+
+.notificacion {
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 100%;
+    background-color: red;
+    position: absolute;
+    top: -0.5rem;
+    left: 3rem;
+    box-shadow: 1px 1px 15px 4px red;
+}

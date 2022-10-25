@@ -1,0 +1,116 @@
+@media only screen and (max-width: 1680px) {
+    .listas {
+        div {
+            li {
+                margin: 4rem 4.5rem;
+            }
+        }
+    }
+
+    .navbar {
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .headerTitle {
+        font-size: 2.8em;
+    }
+    
+    .listas {
+        div {
+            li {
+                margin: 4rem 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .titulo {
+        border-bottom: #EAEAEA solid .1rem;
+    }
+
+    .headerGeneral {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .headerTitle {
+        margin: 1rem 0;
+        font-size: 3.2em;
+        text-align: center;
+    }
+    
+    .listas {
+        border-bottom: #EAEAEA solid .1rem;
+            div {
+                height: fit-content;
+                border: none;
+                width: fit-content;
+                    li {
+                        margin: 2rem;
+                    }
+            }
+    }
+
+    .carro {
+        width: fit-content;
+        margin: 1rem auto;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .listas {
+        div {
+            li {
+                margin: 2rem 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 474px) {
+    .navbar {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+    .headerTitle {
+        font-size: 2.8em;
+        height: fit-content;
+    }
+    
+    .listas {
+        flex-direction: column;
+        margin: .5rem 0 1rem 0;
+            .xbox {
+                margin-bottom: .5rem;
+            }
+            div {
+                li {
+                    margin: 1rem;
+                }
+            }
+    }
+
+    .carro {
+        margin-top: 0;
+    }
+
+    .nintendoTitle {
+        padding: .4rem 1rem;
+    }
+
+    .xboxTitle {
+        padding: .2rem 2rem;
+    }
+}
