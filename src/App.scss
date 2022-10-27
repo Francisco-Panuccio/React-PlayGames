@@ -1,3 +1,5 @@
+/* Header */
+
 .headerGeneral {
     background-color: #05080C;
 }
@@ -85,4 +87,82 @@
     top: -0.5rem;
     left: 3rem;
     box-shadow: 1px 1px 15px 4px red;
+}
+
+/* Main - Inicio */
+
+.carousel {
+    width: 80rem;
+    border: .2rem solid black;
+    border-radius: 5rem;
+    margin: 4rem auto;
+    background-color: #F7F7F7;
+    box-shadow: 1px 1px 15px 5px black;
+        img {
+            margin: 0 9.8rem; 
+            width: 60rem;
+            height: 40rem;
+        }
+        button {
+            width: 12%;
+                span {
+                    width: 4rem;
+                    height: 10rem;
+                }
+        }
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: .1rem solid #F7F7F7;
+    background-color: #05080C;
+        p {
+            font-size: .8rem;
+            font-weight: 600;
+            text-align: center;
+            color: #F7F7F7;
+            margin: auto 0 auto 6rem;
+            text-decoration: underline;
+            font-family: 'Silkscreen', cursive;
+        }
+}
+
+.footer_iconos {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 2rem;
+        li {
+            a {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                margin: 0 2rem;
+                    span {
+                        border: 0.2rem solid #F7F7F7;
+                        font-size: 1rem;
+                        font-family: 'Silkscreen', cursive;
+                        font-weight: 600;
+                        color: #F7F7F7;
+                        padding: 0.5rem;
+                        border-radius: 10px;
+                    }
+                    img {
+                        width: 2rem;
+                        height: 2rem;
+                        padding: 1rem;
+                        margin: 0 2rem;
+                        box-sizing: content-box;
+                            &:hover {
+                                transition: all 1s;
+                                transform: rotate(360deg);
+                            }
+                    }
+            }
+        }
 }

@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "empresa": "PlayStation",
+        "juego": "Marvel's Spider-Man",
+        "caratula": ,
+        "precio": 10000
+    },
+    {
+        "id": 2,
+        "empresa": "PlayStation",
+        "juego": "FIFA 23",
+        "caratula": ,
+        "precio": 20000
+    },
+    {
+        "id": 3,
+        "empresa": "PlayStation",
+        "juego": "The Last of Us: Part II",
+        "caratula": ,
+        "precio": 16000
+    },
+    {
+        "id": 4,
+        "empresa": "PlayStation",
+        "juego": "God of War: Ragnarok",
+        "caratula": ,
+        "precio": 20000
+    },
+    {
+        "id": 5,
+        "empresa": "PlayStation",
+        "juego": "Horizon Zero Dawn",
+        "caratula": ,
+        "precio": 6000
+    },
+    {
+        "id": 6,
+        "empresa": "PlayStation",
+        "juego": "Uncharted 4: A Thief's End",
+        "caratula": ,
+        "precio": 6000
+    },
+    {
+        "id": 7,
+        "empresa": "Nintendo",
+        "juego": "Mario Kart 8 Deluxe",
+        "caratula": ,
+        "precio": 15000
+    },
+    {
+        "id": 8,
+        "empresa": "Nintendo",
+        "juego": "Animal Crossing: New Horizons",
+        "caratula": ,
+        "precio": 20000
+    },
+    {
+        "id": 9,
+        "empresa": "Nintendo",
+        "juego": "Super Smash Bros: Ultimate",
+        "caratula": ,
+        "precio": 18000
+    },
+    {
+        "id": 10,
+        "empresa": "Nintendo",
+        "juego": "The Legend of Zelda: Breath of the Wild",
+        "caratula": ,
+        "precio": 18000
+    },
+    {
+        "id": 11,
+        "empresa": "Nintendo",
+        "juego": "Pokémon Sword",
+        "caratula": ,
+        "precio": 17000
+    },
+    {
+        "id": 12,
+        "empresa": "Nintendo",
+        "juego": "Super Mario Odyssey",
+        "caratula": ,
+        "precio": 15000
+    },
+    {
+        "id": 13,
+        "empresa": "Xbox",
+        "juego": "Forza Horizon 5 Premium Edition",
+        "caratula": ,
+        "precio": 10000
+    },
+    {
+        "id": 14,
+        "empresa": "Xbox",
+        "juego": "Halo Infinite",
+        "caratula": ,
+        "precio": 8000
+    },
+    {
+        "id": 15,
+        "empresa": "Xbox",
+        "juego": "Call of Duty: Modern Warfare II - Edición Bóveda",
+        "caratula": ,
+        "precio": 10000
+    },
+    {
+        "id": 16,
+        "empresa": "Xbox",
+        "juego": "Star Ocean: The Divine Force",
+        "caratula": ,
+        "precio": 7000
+    },
+    {
+        "id": 17,
+        "empresa": "Xbox",
+        "juego": "A Plague Tale: Requiem",
+        "caratula": ,
+        "precio": 13000
+    },
+    {
+        "id": 18,
+        "empresa": "Xbox",
+        "juego": "Mortal Kombat 11 Ultimate",
+        "caratula": ,
+        "precio": 12000
+    }
+]

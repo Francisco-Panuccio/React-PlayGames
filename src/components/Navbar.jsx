@@ -1,4 +1,5 @@
-import Icono_Cart from "../iconos/cart_icon.svg";
+import CartWidget from "./CartWidget";
+import PlayStation from "./PlayStation";
 
 const Navbar = () => {
     return (
@@ -9,7 +10,7 @@ const Navbar = () => {
                 </div>
                 <ul className="listas">
                     <div>
-                        <li><a href="#" className="playTitle">PlayStation</a></li>
+                        <li><a href={PlayStation} className="playTitle">PlayStation</a></li>
                     </div>
                     <div>
                         <li><a href="#" className="nintendoTitle">Nintendo</a></li>
@@ -18,12 +19,7 @@ const Navbar = () => {
                         <li><a href="#" className="xboxTitle">Xbox</a></li>
                     </div>
                 </ul>
-                <div className="carro">
-                    <button className="carritoBoton">
-                        <img src={Icono_Cart} alt="Icono Carrito" className="iconoCarrito" />
-                        <div className="notificacion"></div>
-                    </button>
-                </div>
+                <CartWidget/>
             </nav>
         </>
     )
