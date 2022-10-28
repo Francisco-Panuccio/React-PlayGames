@@ -7,7 +7,7 @@ import Banner5 from "../imagenes/spiderman_banner.webp"
 const Carousel = () => {
     return(
         <>
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item" data-bs-interval="5000">
                         <img src={Banner1} className="banner" alt="Banner God of War"/>

@@ -1,5 +1,3 @@
-import Item from "./Item";
-
 const ItemList = () => {
     return(
         <>

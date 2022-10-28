@@ -1,5 +1,4 @@
 import CartWidget from "./CartWidget";
-import PlayStation from "./PlayStation";
 
 const Navbar = () => {
     return (
@@ -10,7 +9,7 @@ const Navbar = () => {
                 </div>
                 <ul className="listas">
                     <div>
-                        <li><a href={PlayStation} className="playTitle">PlayStation</a></li>
+                        <li><a href="#" className="playTitle">PlayStation</a></li>
                     </div>
                     <div>
                         <li><a href="#" className="nintendoTitle">Nintendo</a></li>
