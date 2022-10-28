@@ -10,6 +10,35 @@
     .navbar {
         justify-content: space-evenly;
     }
+
+    .carousel {
+        width: 65rem;
+            img {
+                width: 45rem;
+                height: 30rem;
+            }
+    }
+
+    footer {
+        p {
+            margin: auto 0 auto 5rem;
+        }
+    }
+
+    .footer_iconos {
+        margin: 2rem 1rem;
+            li {
+                a {
+                    span {
+                        font-size: .8rem;
+                    }
+                    img {
+                        width: 1.8rem;
+                        height: 1.8rem;
+                    }
+                }
+            }
+    }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -23,6 +52,27 @@
                 margin: 4rem 2rem;
             }
         }
+    }
+
+    footer {
+        flex-flow: column wrap;
+            p {
+                margin: 2rem auto 0rem auto ;
+            }
+    }
+
+    .footer_iconos {
+        margin: 1rem auto;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .carousel {
+        width: 60rem;
+            img {
+                width: 40rem;
+                height: 30rem;
+            }
     }
 }
 
@@ -56,6 +106,7 @@
                 height: fit-content;
                 border: none;
                 width: fit-content;
+                margin: 0;
                     li {
                         margin: 2rem;
                     }
@@ -66,9 +117,62 @@
         width: fit-content;
         margin: 1rem auto;
     }
+
+    .carousel {
+        width: 50rem;
+            img {
+                width: 30rem;
+                height: 25rem;
+            }
+    }
 }
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 850px) {
+    .carousel {
+        width: 30rem;
+        border-radius: unset;
+            img {
+                margin: 0; 
+                width: 30rem;
+                height: 25rem;
+            }
+            button {
+                background-color: #EAEAEA;
+                border-radius: 50%;
+                margin: 38% 0;
+                width: 3rem;
+                height: 3rem;
+                    span {
+                        width: 2rem;
+                    }
+            }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    footer {
+        p {
+            font-size: .6rem;
+        }
+    }
+
+    .footer_iconos {
+        li {
+            a {
+                span {
+                    font-size: .6rem;
+                }
+                img {
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    margin: 0 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 602px) {
     .listas {
         div {
             li {
@@ -78,7 +182,25 @@
     }
 }
 
-@media only screen and (max-width: 474px) {
+@media only screen and (max-width: 570px) {
+    .carousel {
+        width: 25rem;
+            img {
+                margin: 0; 
+                width: 25rem;
+                height: 20rem;
+            }
+            button {
+                margin: 36% 0;
+            }
+    }
+
+    .footer_iconos {
+        flex-flow: column wrap;
+    }
+}
+
+@media only screen and (max-width: 506px) {
     .navbar {
         display: flex;
         flex-flow: column wrap;
@@ -92,6 +214,7 @@
     .listas {
         flex-direction: column;
         margin: .5rem 0 1rem 0;
+        padding: 0;
             .xbox {
                 margin-bottom: .5rem;
             }
@@ -112,5 +235,37 @@
 
     .xboxTitle {
         padding: .2rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .carousel {
+        width: 20rem;
+            img {
+                margin: 0; 
+                width: 20rem;
+                height: 20rem;
+            }
+            button {
+                margin: 44% 0;
+            }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .carousel {
+        width: 15rem;
+            img {
+                margin: 0; 
+                width: 15rem;
+                height: 15rem;
+            }
+            button {
+                width: 2rem;
+                height: 2rem;
+                    span {
+                        width: 1.5rem;
+                    }
+            }
     }
 }
