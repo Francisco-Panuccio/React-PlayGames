@@ -1,7 +1,11 @@
+import Items from "./containers/Items"
+
 const ItemList = () => {
-    return(
+    return (
         <>
-            <Item/>
+            <div className="item">
+                <Items/>
+            </div>
         </>
     )
 }

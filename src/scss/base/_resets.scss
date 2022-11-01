@@ -16,5 +16,7 @@ button {
 }
 
 body {
-    background: url(../../imagenes/fondo.png);
+    background: url(../../../public/assets/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }

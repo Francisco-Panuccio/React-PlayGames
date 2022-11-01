@@ -1,20 +1,14 @@
-import { useState } from "react";
-
-const Item = () => {
-    const [game, setGame] = useState([]);
-    
-    return(
+const Item = (props) => {
+    return (
         <>
-            {
-                game.map(item => (
-                    <Item
-                    key={item.id}
-                    caratula={item.caratula}
-                    juego={item.juego}
-                    precio={item.precio}
-                    />
-                ))
-            }
+            <img src={props.caratula} alt={props.juego} />
+            <div>
+                <span className="nombre">{props.juego}</span>
+                <span className="precio">{"$" + props.precio.toLocaleString()}</span>
+                <button onClick={props.comprar}>Comprar</button>
+            </div>
         </>
     )
 }
+
+export default Item;
