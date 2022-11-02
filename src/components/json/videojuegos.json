@@ -3,126 +3,126 @@
         "id": 1,
         "empresa": "PlayStation",
         "juego": "Marvel's Spider-Man",
-        "caratula": "../../imagenes/spiderman_venta",
+        "caratula": "/imagenes/spiderman_venta.jpg",
         "precio": 10000
     },
     {
         "id": 2,
         "empresa": "PlayStation",
         "juego": "FIFA 23",
-        "caratula": "../../imagenes/FIFA_venta",
+        "caratula": "/imagenes/FIFA_venta.jpg",
         "precio": 20000
     },
     {
         "id": 3,
         "empresa": "PlayStation",
         "juego": "The Last of Us: Part II",
-        "caratula": "../../imagenes/last_venta",
+        "caratula": "/imagenes/last_venta.png",
         "precio": 16000
     },
     {
         "id": 4,
         "empresa": "PlayStation",
         "juego": "God of War: Ragnarok",
-        "caratula": "../../imagenes/god_venta",
+        "caratula": "/imagenes/god_venta.png",
         "precio": 20000
     },
     {
         "id": 5,
         "empresa": "PlayStation",
         "juego": "Horizon Zero Dawn",
-        "caratula": "../../imagenes/horizon_venta",
+        "caratula": "/imagenes/horizon_venta.jpg",
         "precio": 6000
     },
     {
         "id": 6,
         "empresa": "PlayStation",
         "juego": "Uncharted 4: A Thief's End",
-        "caratula": "../../imagenes/uncharted_venta",
+        "caratula": "/imagenes/uncharted_venta.jpg",
         "precio": 6000
     },
     {
         "id": 7,
         "empresa": "Nintendo",
         "juego": "Mario Kart 8 Deluxe",
-        "caratula": "../../imagenes/mario_venta",
+        "caratula": "/imagenes/mario_venta.jpg",
         "precio": 10000
     },
     {
         "id": 8,
         "empresa": "Nintendo",
         "juego": "Animal Crossing: New Horizons",
-        "caratula": "../../imagenes/animal_venta",
+        "caratula": "/imagenes/animal_venta.jpg",
         "precio": 20000
     },
     {
         "id": 9,
         "empresa": "Nintendo",
         "juego": "Super Smash Bros: Ultimate",
-        "caratula": "../../imagenes/smash_venta",
+        "caratula": "/imagenes/smash_venta.jpg",
         "precio": 18000
     },
     {
         "id": 10,
         "empresa": "Nintendo",
         "juego": "The Legend of Zelda: Breath of the Wild",
-        "caratula": "../../imagenes/zelda_venta",
+        "caratula": "/imagenes/zelda_venta.jpg",
         "precio": 18000
     },
     {
         "id": 11,
         "empresa": "Nintendo",
         "juego": "Pokémon Sword",
-        "caratula": "../../imagenes/pokemon_venta",
+        "caratula": "/imagenes/pokemon_venta.jpg",
         "precio": 17000
     },
     {
         "id": 12,
         "empresa": "Nintendo",
         "juego": "Super Mario Odyssey",
-        "caratula": "../../imagenes/odyssey_venta",
+        "caratula": "/imagenes/odyssey_venta.jpg",
         "precio": 15000
     },
     {
         "id": 13,
         "empresa": "Xbox",
         "juego": "Forza Horizon 5 Premium Edition",
-        "caratula": "../../imagenes/forza_venta",
+        "caratula": "/imagenes/forza_venta.webp",
         "precio": 10000
     },
     {
         "id": 14,
         "empresa": "Xbox",
         "juego": "Halo Infinite",
-        "caratula": "../../imagenes/halo_venta",
+        "caratula": "/imagenes/halo_venta.webp",
         "precio": 8000
     },
     {
         "id": 15,
         "empresa": "Xbox",
         "juego": "Call of Duty: Modern Warfare II - Edición Bóveda",
-        "caratula": "../../imagenes/call_venta",
+        "caratula": "/imagenes/call_venta.webp",
         "precio": 10000
     },
     {
         "id": 16,
         "empresa": "Xbox",
         "juego": "Star Ocean: The Divine Force",
-        "caratula": "../../imagenes/star_venta",
+        "caratula": "/imagenes/star_venta.jpg",
         "precio": 7000
     },
     {
         "id": 17,
         "empresa": "Xbox",
         "juego": "A Plague Tale: Requiem",
-        "caratula": "../../imagenes/plague_venta",
+        "caratula": "/imagenes/plague_venta.webp",
         "precio": 13000
     },
     {
         "id": 18,
         "empresa": "Xbox",
         "juego": "Mortal Kombat 11 Ultimate",
-        "caratula": "../../imagenes/mortal_venta",
+        "caratula": "/imagenes/mortal_venta.jpeg",
         "precio": 12000
     }
 ]

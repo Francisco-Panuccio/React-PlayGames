@@ -120,11 +120,8 @@
 /* Main - Productos */
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
+    max-width: none;
+    width: 100%;
 }
 
 .item {
@@ -134,7 +131,13 @@
     border-radius: .5rem;
     justify-content: center;
     align-items: center;
-        div {
+        img {
+            width: 24rem;
+            height: 27rem;
+            border: .2rem solid black;
+            border-radius: 1rem 1rem 0 0;
+        }
+        .div1 {
             display: flex;
             flex-flow: column wrap;
             justify-content: center;
@@ -143,34 +146,36 @@
             box-shadow: 0px 2px 13px -1px #ffffff;
             border-radius: 0 0 1rem 1rem;
             width: 23.9rem;
-        }
-        img {
-            width: 24rem;
-            height: 20rem;
-            border: .2rem solid black;
-            border-radius: 1rem 1rem 0 0;
-        }
-        .nombre {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 1.3rem;
-            font-weight: 400;
-            text-align: center;
-            margin-bottom: 0;
-        }
-        .precio {
-            font-family: 'Rubik', sans-serif;
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #E60012;;
-        }
-        span {
-            margin: .5rem;
-        }
-        button {
-            font-size: 1rem;
-            padding: .5rem;
-            border-radius: 1rem;
-            margin: 0 0 1rem 0;
+                .nombre {
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    text-align: center;
+                    margin-bottom: 0;
+                }
+                .precio {
+                    font-family: 'Rubik', sans-serif;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: #E60012;;
+                }
+                span {
+                    margin: .5rem;
+                }
+                .div2 {
+                        .compra {
+                            font-size: 1rem;
+                            padding: .5rem;
+                            border-radius: 1rem;
+                            margin: 0 0 1rem 0;
+                        }
+                        .detalles {
+                            font-size: 1rem;
+                            padding: .5rem;
+                            border-radius: 1rem;
+                            margin: 0 0 1rem 2rem;
+                        }
+                }
         }
 }
 
