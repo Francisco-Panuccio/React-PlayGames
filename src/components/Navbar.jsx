@@ -1,21 +1,22 @@
 import CartWidget from "./CartWidget";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
         <>
             <nav className="navbar">
                 <div className="titulo">
-                    <a href="#"><h1 className="headerTitle">PlayGames</h1></a>
+                    <Link to="/" style={{"outline": "none"}}><h1 className="headerTitle">PlayGames</h1></Link>
                 </div>
                 <ul className="listas">
                     <div>
-                        <li><a href="#" className="playTitle">PlayStation</a></li>
+                        <li><Link to="/category/PlayStation" className="playTitle" style={{"outline": "none"}}>PlayStation</Link></li>
                     </div>
                     <div>
-                        <li><a href="#" className="nintendoTitle">Nintendo</a></li>
+                        <li><Link to="/category/Nintendo" className="nintendoTitle" style={{"outline": "none"}}>Nintendo</Link></li>
                     </div>
                     <div className="xbox">
-                        <li><a href="#" className="xboxTitle">Xbox</a></li>
+                        <li><Link to="/category/Xbox" className="xboxTitle" style={{"outline": "none"}}>Xbox</Link></li>
                     </div>
                 </ul>
                 <CartWidget/>

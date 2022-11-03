@@ -17,6 +17,7 @@
     font-family: 'Silkscreen', cursive;
     color: #F7F7F7;
     font-size: 3.2em;
+    text-shadow: #4B473F -4px 0;
 }
 
 .listas {
@@ -126,7 +127,7 @@
 
 .item {
     display: flex;
-    flex-flow: column wrap;
+    flex-wrap: wrap;
     margin: 2rem;
     border-radius: .5rem;
     justify-content: center;
@@ -144,7 +145,8 @@
             align-items: center;
             background-color: white;
             box-shadow: 0px 2px 13px -1px #ffffff;
-            border-radius: 0 0 1rem 1rem;
+            border-radius: 1rem;
+            margin: 1rem;
             width: 23.9rem;
                 .nombre {
                     font-family: 'Times New Roman', Times, serif;
@@ -157,7 +159,7 @@
                     font-family: 'Rubik', sans-serif;
                     font-size: 1.3rem;
                     font-weight: 600;
-                    color: #E60012;;
+                    color: #E60012;
                 }
                 span {
                     margin: .5rem;
@@ -166,14 +168,85 @@
                         .compra {
                             font-size: 1rem;
                             padding: .5rem;
-                            border-radius: 1rem;
+                            border-radius: 1.5rem;
+                            font-weight: 600;
                             margin: 0 0 1rem 0;
+                            background-color: black;
+                            color: white;
+                            border: .3rem rgb(112, 111, 111) solid;
+                                &:hover {
+                                        box-shadow: inset 1px 1px 10px 1px white;
+                                }
                         }
                         .detalles {
                             font-size: 1rem;
                             padding: .5rem;
-                            border-radius: 1rem;
+                            border-radius: 2rem;
+                            background-color: rgba(0, 0, 0, 0.88);
+                            border: .3rem black solid;
                             margin: 0 0 1rem 2rem;
+                            box-shadow: 0px 0px 6px 0px #000000;
+                                &:hover {
+                                    box-shadow: inset 1px 1px 10px 1px white;
+                                }
+                                .ojo {
+                                    width: 2rem;
+                                    height: 2rem;
+                                    border: solid .2rem black;
+                                    border-radius: 2rem;
+                                }
+                        }
+                }
+        }
+}
+
+/* PopUp Detalles */
+
+.popUp {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60rem;
+    height: 40rem;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 4rem auto;
+    box-shadow: inset 0px 0px 13px 1px #000000;
+        img {
+            width: 20rem;
+            height: 20rem;
+            margin: 2rem;
+            border-radius: 1rem;
+        }
+        p {
+            width: 34rem;
+            height: 20rem;
+            margin: 3.5rem 2rem 0 0;
+            font-size: 1.2rem;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem auto 2rem auto;
+            width: 54rem;
+            height: 12rem;
+                span {
+                    font-family: 'Rubik', sans-serif;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: #E60012;
+                }
+                button {
+                    font-size: 2rem;
+                    padding: .5rem;
+                    border-radius: 1.5rem;
+                    font-weight: 600;
+                    margin: 0 0 0 10rem;
+                    background-color: black;
+                    color: white;
+                    border: .3rem rgb(112, 111, 111) solid;
+                        &:hover {
+                                box-shadow: inset 1px 1px 10px 1px white;
                         }
                 }
         }

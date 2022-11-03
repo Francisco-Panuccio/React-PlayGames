@@ -1,8 +1,8 @@
-import Banner1 from "../imagenes/god_banner.webp"
-import Banner2 from "../imagenes/pokemon_banner.webp"
-import Banner3 from "../imagenes/call_banner.webp"
-import Banner4 from "../imagenes/mario_banner.avif"
-import Banner5 from "../imagenes/spiderman_banner.webp"
+import Banner1 from "../../public/imagenes/god_banner.webp"
+import Banner2 from "../../public/imagenes/pokemon_banner.webp"
+import Banner3 from "../../public/imagenes/call_banner.webp"
+import Banner4 from "../../public/imagenes/mario_banner.avif"
+import Banner5 from "../../public/imagenes/spiderman_banner.webp"
 
 const Carousel = () => {
     return(
