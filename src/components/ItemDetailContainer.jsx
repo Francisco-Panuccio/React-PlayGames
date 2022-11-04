@@ -9,28 +9,25 @@ const ItemDetailContainer = () => {
     const { idItem } = useParams();
 
     useEffect(() => {
-        customFetch(2000, videojuegos.find(item => item.id === idItem))
-            .then(response => setJuego(response))
+        customFetch(2000, videojuegos)
+            .then(response => {
+                setJuego(response.find(item => item.id === parseInt(idItem)));
+            })
             .catch(error => console.log(error))
             .finally(() => console.log("Proceso Finalizado"))
     }, [])
 
     return (
         <>
-            {
-                juego.map(item => (
-                    <ItemDetail
-                        key={item.id}
-                        caratula={item.caratula}
-                        descripcion={item.descripcion}
-                        juego={item.juego}
-                        precio={item.precio}
-                    />
-                ))
-            }
-
             <div className="popUp">
-                <ItemDetail />
+                <ItemDetail 
+                    id={juego.id}
+                    key={juego.id}
+                    caratula={juego.caratula}
+                    descripcion={juego.descripcion}
+                    juego={juego.juego}
+                    precio={juego.precio}
+                />
             </div>
         </>
     )

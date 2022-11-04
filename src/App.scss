@@ -146,7 +146,7 @@
             background-color: white;
             box-shadow: 0px 2px 13px -1px #ffffff;
             border-radius: 1rem;
-            margin: 1rem;
+            margin: 3rem;
             width: 23.9rem;
                 .nombre {
                     font-family: 'Times New Roman', Times, serif;
@@ -206,42 +206,94 @@
     display: flex;
     flex-wrap: wrap;
     width: 60rem;
-    height: 40rem;
+    height: 45rem;
     background-color: white;
     border-radius: 1rem;
     margin: 4rem auto;
     box-shadow: inset 0px 0px 13px 1px #000000;
+        .divTitular {
+            height: fit-content;
+            margin: 1.5rem auto 1rem auto;
+            border: solid .1rem #6022BD;
+            border-radius: 2rem;
+            box-shadow: inset 0px 0px 13px 1px #000000;
+                .titular {
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 2rem;
+                    letter-spacing: .3rem;
+                    margin: 0;
+                    width: fit-content;
+                    height: fit-content;
+                    border: none;
+                    text-shadow: #000000 1px 1px;
+                }
+        }
         img {
             width: 20rem;
-            height: 20rem;
-            margin: 2rem;
+            height: 25rem;
+            margin: 0 2rem;
+            border: .1rem solid black;
             border-radius: 1rem;
         }
         p {
             width: 34rem;
             height: 20rem;
-            margin: 3.5rem 2rem 0 0;
+            margin: 2.5rem 2rem 0 0;
             font-size: 1.2rem;
+            border-radius: 2rem;
+            border: solid .1rem black;
+            padding: 1rem;
         }
         div {
             display: flex;
+            border-top: solid .1rem black;
             justify-content: center;
             align-items: center;
-            margin: 2rem auto 2rem auto;
+            margin: 1rem auto -2rem auto;
             width: 54rem;
-            height: 12rem;
+            height: 7rem;
                 span {
                     font-family: 'Rubik', sans-serif;
                     font-size: 2rem;
                     font-weight: 600;
                     color: #E60012;
+                    text-shadow: #E60012 0px 0px 2px;
                 }
-                button {
+                .botonIzq {
+                    margin: 0 2rem 0 8rem;
+                    width: 1.5rem;
+                    background-color: transparent;
+                    border: none;
+                        img {
+                            width: 2rem;
+                            height: 2rem;
+                            border: none;
+                            margin: 0;
+                                &:hover {
+                                    filter: drop-shadow(0px 0px 1px #000000);
+                                }
+                        }
+                }
+                .botonDer {
+                    margin: 0 0 0 1rem;
+                    width: 1.5rem;
+                    background-color: transparent;
+                    border: none;
+                        img {
+                            width: 2rem;
+                            height: 2rem;
+                                border: none;
+                            margin: 0;
+                                &:hover {
+                                    filter: drop-shadow(0px 0px 1px #000000);
+                                }
+                        }
+                }
+                .botonCompra {
                     font-size: 2rem;
                     padding: .5rem;
                     border-radius: 1.5rem;
                     font-weight: 600;
-                    margin: 0 0 0 10rem;
                     background-color: black;
                     color: white;
                     border: .3rem rgb(112, 111, 111) solid;

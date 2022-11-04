@@ -36,7 +36,7 @@
         "empresa": "PlayStation",
         "juego": "Horizon Zero Dawn",
         "caratula": "/imagenes/horizon_venta.jpg",
-        "descripcion": "Vive la misión legendaria de Aloy para desvelar los secretos de una futura Tierra dominada por máquinas. ¡Usa devastadores ataques contra tus depredadores y explora un majestuoso mundo abierto en este galardonado RPG de acción!",
+        "descripcion": "En una era en la cual las máquinas deambulan libres por la tierra y la humanidad ya no es la especie dominante, una joven cazadora llamada Aloy se embarca en un viaje para descubrir su destino. En un exuberante mundo postapocalíptico donde la naturaleza ha reclamado las ruinas de una civilización olvidada, los remanentes de la humanidad viven en primitivas tribus cazadoras-recolectoras. Su dominio sobre esta nueva tierra salvaje ha sido usurpado por las máquinas, temibles criaturas mecánicas de origen desconocido.",
         "precio": 6000
     },
     {
@@ -114,7 +114,7 @@
     {
         "id": 15,
         "empresa": "Xbox",
-        "juego": "Call of Duty: Modern Warfare II - Edición Bóveda",
+        "juego": "COD: Modern Warfare II - Vault Edition",
         "caratula": "/imagenes/call_venta.webp",
         "descripcion": "En Call of Duty®: Modern Warfare® II, los jugadores se verán inmersos en un conflicto a escala global sin precedentes que incluye el regreso de Operadores icónicos de la fuerza operativa 141. Desde operaciones tácticas de infiltración a pequeña escala hasta misiones altamente secretas, los jugadores se desplegarán con amigos en una experiencia inmersiva. Modern Warfare® II cuenta con una campaña mundial de un jugador, un combate Multijugador envolvente y un modo de juego evolucionado de Operaciones Especiales tácticas y cooperativas.",
         "precio": 10000

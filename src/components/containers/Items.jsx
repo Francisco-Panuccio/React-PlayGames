@@ -6,52 +6,38 @@ import { useState, useEffect } from "react";
 
 const Items = () => {
     const [game, setGame] = useState([]);
-    const { PlayStation, Nintendo, Xbox } = useParams();
+    const { idCategory } = useParams();
 
     function comprar(id) {
         console.log(`Compraste el producto ${id}`)
     }
 
-    function itemsPlay() {
-        customFetch(2000, videojuegos.filter(item => item.empresa === "PlayStation"))
-            .then(response => setGame(response))
-            .catch(error => console.log(error))
-            .finally(() => console.log("Proceso Finalizado"))
-    }
-
-    function itemsNint() {
-        customFetch(2000, videojuegos.filter(item => item.empresa === "Nintendo"))
-            .then(response => setGame(response))
-            .catch(error => console.log(error))
-            .finally(() => console.log("Proceso Finalizado"))
-    }
-
-    function itemsXbox() {
-        customFetch(2000, videojuegos.filter(item => item.empresa === "Xbox"))
-            .then(response => setGame(response))
+    function fetchList() {
+        customFetch(2000, videojuegos)
+            .then(response => {
+                if(idCategory) {
+                    setGame(response.filter(item => item.empresa === idCategory));
+                } else {
+                    setGame(response);
+                }
+            })
             .catch(error => console.log(error))
             .finally(() => console.log("Proceso Finalizado"))
     }
     
     useEffect(() => {
-        if(PlayStation) {
-            return itemsPlay();
-        }
-        else if(Nintendo) {
-            return itemsNint();
-        }
-        else if(Xbox) {
-            return itemsXbox();
-        }
-    }, [PlayStation, Nintendo, Xbox])
+        fetchList();
+    }, [idCategory])
 
     return (
         <>
             {
                 game.map(item => (
                     <Item
+                        id={item.id}
                         key={item.id}
                         caratula={item.caratula}
+                        descripcion={item.descripcion}
                         juego={item.juego}
                         precio={item.precio}
                         comprar={() => comprar(item.id)}
