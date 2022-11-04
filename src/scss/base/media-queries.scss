@@ -41,7 +41,7 @@
     }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1300px) {    
     .headerTitle {
         font-size: 2.8em;
     }
@@ -51,6 +51,28 @@
             li {
                 margin: 4rem 2rem;
             }
+        }
+    }
+
+    .item {
+        img {
+            width: 20rem;
+            height: 22rem;
+        }
+        .div1 {
+            width: 20rem;
+                .nombre {
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+                .precio {
+                    font-size: 1.2rem;
+                }
+                .div2 {
+                    .compra {
+                        margin: .2rem 0 1rem 0;
+                    }
+                }
         }
     }
 
@@ -125,6 +147,61 @@
                 height: 25rem;
             }
     }
+
+    .popUp {
+        width: 50rem;
+        height: 38rem;
+        margin: 4rem auto;
+            .divTitular {
+                margin: 1.5rem auto .5rem auto;
+                width: 35rem;
+                padding: 0;
+                    .titular {
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+            }
+            img {
+                width: 15rem;
+                height: 20rem;
+                margin: 1rem 2rem;
+            }
+            p {
+                width: 29rem;
+                height: 20rem;
+                margin: 1rem 2rem 0 0;
+                font-size: 1.1rem;
+            }
+            .precioBotones {
+                margin: auto;
+                width: 54rem;
+                height: 5rem;
+                padding: 3rem;
+                    span {
+                        font-size: 1.2rem;
+                    }
+                    .botones {
+                        .botonIzq {
+                            margin-right: 1rem;
+                            img {
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                margin: 0 0 .5rem 0;
+                            }
+                        }
+                        .botonDer {
+                                img {
+                                    width: 1.5rem;
+                                    height: 1.5rem;
+                                    margin: 0 0 .5rem 0;
+                                }
+                        }
+                        .botonCompra {
+                            font-size: 1.2rem;
+                        }
+                    }
+            }
+    }
 }
 
 @media only screen and (max-width: 850px) {
@@ -147,9 +224,44 @@
                     }
             }
     }
-}
 
-@media only screen and (max-width: 850px) {
+    .popUp {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 35rem;
+        height: 64rem;
+            .divTitular {
+                margin: 1.5rem auto 2rem 1.5rem;
+                width: 32rem;
+                    .titular {
+                        font-size: 1.3rem;
+                    }
+            }
+            img {
+                width: 20rem;
+                height: 25rem;
+                margin: 0rem auto 2rem 7.5rem;
+            }
+            p {
+                width: 29rem;
+                height: 20rem;
+                margin: 0rem auto 1rem 3rem;
+            }
+            .precioBotones {
+                margin: auto 0 0 0;
+                width: 35rem;
+                    .botones {
+                        .botonIzq {
+                            margin: 0 1rem 0 5rem;
+                        }
+                        .botonDer {
+                            margin: 0 0 0 1rem;
+                        }
+                    }
+            }
+    }
+
     footer {
         p {
             font-size: .6rem;
@@ -179,6 +291,37 @@
                 margin: 2rem 1rem;
             }
         }
+    }
+
+    .popUp {
+        width: 30rem;
+        height: 67rem;
+            .divTitular {
+                margin: 1.5rem auto 2rem 2.5rem;
+                width: 25rem;
+            }
+            img {
+                width: 20rem;
+                height: 25rem;
+                margin: 0rem auto 2rem 5rem;
+            }
+            p {
+                width: 27rem;
+                height: 22rem;
+                margin: 0rem auto 1rem 1.5rem;
+            }
+            .precioBotones {
+                margin: 1rem 2rem 0 0;
+                width: 30rem;
+                    .botones {
+                        .botonIzq {
+                            margin: 0 1rem 0 3rem;
+                        }
+                        .botonDer {
+                            margin: 0 0 0 1rem;
+                        }
+                    }
+            }
     }
 }
 
@@ -236,6 +379,56 @@
     .xboxTitle {
         padding: .2rem 2rem;
     }
+
+    .popUp {
+        width: 20rem;
+        height: 62rem;
+            .divTitular {
+                margin: 1.5rem auto 2rem 2.5rem;
+                width: 15rem;
+                    .titular {
+                        font-size: 1rem;
+                    }
+            }
+            img {
+                width: 14rem;
+                height: 18rem;
+                margin: 0rem auto 2rem 3rem;
+            }
+            p {
+                width: 16rem;
+                height: 20rem;
+                overflow: auto;
+                border-radius: 0;
+                margin: 0 auto 1rem 2rem;
+                border-radius: 1rem 0 0 1rem;
+            }
+            .precioBotones {
+                flex-direction: column;
+                margin: 1rem 2rem 0 0;
+                width: 20rem;
+                height: 9rem;
+                    span {
+                        margin: 0rem 0 1rem 0;
+                    }
+                    .botones {
+                        display: flex;
+                        margin: 0 4rem 0 0;
+                            .botonIzq {
+                                margin: 0 1rem 0 4.5rem;
+                                    img {
+                                        margin: 0;
+                                    }
+                            }
+                            .botonDer {
+                                margin: 0 0 0 1rem;
+                                    img {
+                                        margin: 0;
+                                    }
+                            }
+                    }
+            }
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -267,5 +460,12 @@
                         width: 1.5rem;
                     }
             }
+    }
+
+    .item {
+        img {
+            width: 16rem;
+            height: 18rem;
+        }
     }
 }

@@ -20,7 +20,7 @@
         "empresa": "PlayStation",
         "juego": "The Last of Us: Part II",
         "caratula": "/imagenes/last_venta.png",
-        "descripcion": "Cinco años después de su peligroso viaje a través de unos Estados Unidos pospandemia, Ellie y Joel logran establecerse en Jackson, Wyoming. Vivir entre una próspera comunidad de sobrevivientes les ha concedido paz y estabilidad, a pesar de la amenaza constante de los infectados y de otros sobrevivientes más desesperados. Cuando un evento violento interrumpe esa paz, Ellie se embarca en un viaje incesante para obtener justicia y llegar a un cierre. A medida que caza a los responsables uno por uno, deberá enfrentarse a las devastadoras repercusiones físicas y emocionales de sus acciones.",
+        "descripcion": "Cinco años después de su peligroso viaje a través de unos Estados Unidos pospandemia, Ellie y Joel logran establecerse en Jackson, Wyoming. Vivir entre una próspera comunidad de sobrevivientes les ha concedido paz y estabilidad, a pesar de la amenaza constante de los infectados y de otros sobrevivientes más desesperados. Cuando un evento violento interrumpe esa paz, Ellie se embarca en un viaje incesante para obtener justicia y llegar a un cierre.",
         "precio": 16000
     },
     {
@@ -84,7 +84,7 @@
         "empresa": "Nintendo",
         "juego": "Pokémon Sword",
         "caratula": "/imagenes/pokemon_venta.jpg",
-        "descripcion": "Una nueva generación de Pokémon llega a la consola Nintendo Switch™. Inicia tu aventura como un entrenador Pokémon al seleccionar a uno de los tres nuevos compañeros Pokémon: Grookey, Scorbunny o Sobble. Luego embárcate en un viaje por la nueva región de Galar donde te enfrentarás al problemático Team Yell, ¡mientras revelas el misterio detrás de los Pokémon legendarios Zacian y Zamazenta! Explora el Área Silvestre, un extenso territorio donde el jugador podrá controlar libremente la cámara. Forma equipos con otros jugadores mediante la comunicación local o en línea con el nuevo modo multijugador cooperativo, Incursión Dinamax*, donde los jugadores se enfrentarán a los superfuertes Pokémon conocidos como Pokémon Dinamax.",
+        "descripcion": "Una nueva generación de Pokémon llega a la consola Nintendo Switch™. Inicia tu aventura como un entrenador Pokémon al seleccionar a uno de los tres nuevos compañeros Pokémon: Grookey, Scorbunny o Sobble. Luego embárcate en un viaje por la nueva región de Galar donde te enfrentarás al problemático Team Yell, ¡mientras revelas el misterio detrás de los Pokémon legendarios Zacian y Zamazenta!",
         "precio": 17000
     },
     {
@@ -124,7 +124,7 @@
         "empresa": "Xbox",
         "juego": "Star Ocean: The Divine Force",
         "caratula": "/imagenes/star_venta.jpg",
-        "descripcion": "Square Enix y Tri-Ace presentan el último título de la saga de RPG Star Ocean. Puedes moverte en tres dimensiones mientras vuelas por el cielo y atraviesas tridimensionalmente uno de los escenarios más grandes de la saga. Vuela por los alrededores y recorre los tramos rocosos y los tejados de los edificios de la ciudad, o salta de un acantilado para entrar directamente en combate: ¡tendrás más libertad para explorar y combatir! Mientras que el juego te da la libertad para jugar como quieras, el enfoque de las batallas también ha evolucionado. ¡Los personajes pueden reducir a enemigos de todo tipo con ataques a velocidades vertiginosas, habilidades especiales que los harán desaparecer por un momento de la vista de su rival y una técnica que puede matar de un solo tiro!",
+        "descripcion": "Square Enix y Tri-Ace presentan el último título de la saga de RPG Star Ocean. Puedes moverte en tres dimensiones mientras vuelas por el cielo y atraviesas tridimensionalmente uno de los escenarios más grandes de la saga. Vuela por los alrededores y recorre los tramos rocosos y los tejados de los edificios de la ciudad, o salta de un acantilado para entrar directamente en combate: ¡tendrás más libertad para explorar y combatir!",
         "precio": 7000
     },
     {
