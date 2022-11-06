@@ -1,11 +1,13 @@
 import Item from "../Item";
 import videojuegos from "../json/videojuegos.json";
+import Spinner from "../Spinner";
 import { useParams } from "react-router-dom";
 import { customFetch } from "../../functions/customFetch"
 import { useState, useEffect } from "react";
 
 const Items = () => {
     const [game, setGame] = useState([]);
+    const [loading, setLoading] = useState(true);
     const { idCategory } = useParams();
 
     function comprar(id) {
@@ -20,6 +22,7 @@ const Items = () => {
                 } else {
                     setGame(response);
                 }
+                setLoading(false);
             })
             .catch(error => console.log(error))
             .finally(() => console.log("Proceso Finalizado"))
@@ -31,19 +34,18 @@ const Items = () => {
 
     return (
         <>
-            {
-                game.map(item => (
-                    <Item
-                        id={item.id}
-                        key={item.id}
-                        caratula={item.caratula}
-                        descripcion={item.descripcion}
-                        juego={item.juego}
-                        precio={item.precio}
-                        comprar={() => comprar(item.id)}
-                    />
-                ))
-            }
+                {loading ? <Spinner/>
+                    :game.map(item => (
+                        <Item
+                            id={item.id}
+                            key={item.id}
+                            caratula={item.caratula}
+                            descripcion={item.descripcion}
+                            juego={item.juego}
+                            precio={item.precio}
+                            comprar={() => comprar(item.id)}
+                        />))   
+                }
         </>
     )
 }

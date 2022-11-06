@@ -262,6 +262,11 @@
             }
     }
 
+    .spinner-border {
+        width: 10rem;
+        height: 10rem;
+    }
+
     footer {
         p {
             font-size: .6rem;
@@ -336,6 +341,10 @@
             button {
                 margin: 36% 0;
             }
+    }
+
+    .spinner {
+        margin: 5rem auto;
     }
 
     .footer_iconos {
@@ -428,6 +437,11 @@
                             }
                     }
             }
+    }
+
+    .spinner-border {
+        width: 5rem;
+        height: 5rem;
     }
 }
 
