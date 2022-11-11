@@ -1,7 +1,14 @@
-import minus from "../iconos/minus.svg";
-import plus from "../iconos/plus.svg";
+import ItemCount from "./ItemCount";
+import { useContext } from "react";
+import { CartContext } from "./CartContext";
 
 const ItemDetail = (props) => {
+    const cartItems = useContext(CartContext);
+
+    const onCart = (juego) => {
+        cartItems.addItem(juego);
+    }
+
     return(
         <>
             <div className="divTitular">
@@ -11,11 +18,7 @@ const ItemDetail = (props) => {
             <p className="descripcion">{props.descripcion}</p>
             <div className="precioBotones">
                 <span className="precio">Precio: {"$" + props.precio?.toLocaleString()}</span>
-                <div className="botones">
-                    <button className="botonIzq"><img src={minus} alt="" /></button>
-                    <button className="botonCompra">Comprar</button>
-                    <button className="botonDer"><img src={plus} alt="" /></button>
-                </div>
+                <ItemCount onCart={onCart(cartItems)}/>
             </div>
         </>
     )

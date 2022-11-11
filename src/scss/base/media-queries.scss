@@ -198,6 +198,11 @@
                         }
                         .botonCompra {
                             font-size: 1.2rem;
+                            .cantidades {
+                                width: 1.7rem;
+                                height: 1.7rem;
+                                font-size: 1.2rem;
+                            }
                         }
                     }
             }
@@ -316,8 +321,12 @@
                 margin: 0rem auto 1rem 1.5rem;
             }
             .precioBotones {
-                margin: 1rem 2rem 0 0;
+                margin: 1rem 0 0 0;
                 width: 30rem;
+                    span {
+                        width: 5rem;
+                        text-align: center;
+                    }
                     .botones {
                         .botonIzq {
                             margin: 0 1rem 0 3rem;
@@ -418,11 +427,11 @@
                 width: 20rem;
                 height: 9rem;
                     span {
-                        margin: 0rem 0 1rem 0;
+                        margin: 1.3rem 0 .5rem 0;
                     }
                     .botones {
                         display: flex;
-                        margin: 0 4rem 0 0;
+                        margin: 0 4.5rem 0 0;
                             .botonIzq {
                                 margin: 0 1rem 0 4.5rem;
                                     img {
@@ -434,6 +443,11 @@
                                     img {
                                         margin: 0;
                                     }
+                            }
+                            .botonCompra {
+                                .cantidades {
+                                    margin: .3rem 0 0 0;
+                                }
                             }
                     }
             }

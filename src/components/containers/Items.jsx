@@ -10,10 +10,6 @@ const Items = () => {
     const [loading, setLoading] = useState(true);
     const { idCategory } = useParams();
 
-    function comprar(id) {
-        console.log(`Compraste el producto ${id}`)
-    }
-
     function fetchList() {
         customFetch(2000, videojuegos)
             .then(response => {
@@ -35,7 +31,7 @@ const Items = () => {
     return (
         <>
                 {loading ? <Spinner/>
-                    :game.map(item => (
+                    : game.map(item => (
                         <Item
                             id={item.id}
                             key={item.id}
@@ -43,7 +39,6 @@ const Items = () => {
                             descripcion={item.descripcion}
                             juego={item.juego}
                             precio={item.precio}
-                            comprar={() => comprar(item.id)}
                         />))   
                 }
         </>

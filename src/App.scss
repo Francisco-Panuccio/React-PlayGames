@@ -305,7 +305,164 @@
                             &:hover {
                                     box-shadow: inset 1px 1px 10px 1px white;
                             }
+                        .cantidades {
+                            width: 2rem;
+                            height: 2rem;
+                            font-size: 1.5rem;
+                            pointer-events: none;
+                            outline: none;
+                            border-radius: 1rem;
+                            text-align: center;
+                            background: transparent;
+                            color: white;
+                            padding: 0 .05rem .2rem 0;
+                            margin: 0 0 0 .5rem;
+                        }
                     }
+                }
+        }
+}
+
+/* EmptyCart */
+
+.tituloCart {
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 5rem 40rem 5rem;
+        .continue {
+            display: flex;
+                button {
+                    padding: .5rem;
+                    border-radius: 2rem;
+                    text-align: center;
+                }
+        }
+        .empty {
+            display: block;
+            color: white;
+        }
+}
+
+/* ArrayCart */
+
+.arrayCart {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr .5fr;
+    align-items: center;
+    justify-items: center;
+    margin: 4rem;
+    background-color: white;
+    border: .1rem solid black;
+    border-radius: 2rem;
+    padding: 2rem;
+        img {
+            background-color: #0070D1;
+            width: 15rem;
+            height: 15rem;
+            border: .1rem solid black;
+            border-radius: 1rem;
+            justify-self: start;
+        }
+        .npCart {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            justify-self: start;
+            align-items: center;
+            margin-right: 20rem;
+            width: 20rem;
+            height: 10rem;
+                .nameCart {
+                    font-size: 2rem;
+                    text-align: center;
+                    margin: 0 0 1rem 0;
+                }
+                .priceCart {
+                    font-size: 2rem;
+                    text-align: center;
+                    margin: 0 0 0 0;
+                }
+        }
+        .buttonCart {
+            justify-self: end;
+            margin: auto;
+            .botonIzq {
+                margin: 0 2rem 0 0;
+                width: 1.5rem;
+                background-color: transparent;
+                border: none;
+                    img {
+                        width: 2rem;
+                        height: 2rem;
+                        border: none;
+                        background-color: transparent;
+                        margin: 0;
+                            &:hover {
+                                filter: drop-shadow(0px 0px 1px white);
+                            }
+                    }
+            }
+            .botonDer {
+                margin: 0 0 0 1rem;
+                width: 1.5rem;
+                background-color: transparent;
+                border: none;
+                    img {
+                        width: 2rem;
+                        height: 2rem;
+                        border: none;
+                        background-color: transparent;
+                        margin: 0;
+                            &:hover {
+                                filter: drop-shadow(0px 0px 1px white);
+                            }
+                    }
+            }
+            .botonCompra {
+                font-size: 2rem;
+                padding: .5rem;
+                border-radius: 1.5rem;
+                font-weight: 600;
+                background-color: black;
+                color: white;
+                border: .3rem rgb(112, 111, 111) solid;
+                    &:hover {
+                            box-shadow: inset 1px 1px 10px 1px white;
+                    }
+                .cantidades {
+                    width: 2rem;
+                    height: 2rem;
+                    font-size: 1.5rem;
+                    pointer-events: none;
+                    outline: none;
+                    border-radius: 1rem;
+                    text-align: center;
+                    background: transparent;
+                    color: white;
+                    padding: 0 .05rem .1rem 0;
+                    margin: 0 0 0 .5rem;
+                }
+            }
+        }
+        .delete {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 100%;
+            background-color: black;
+                img {
+                    margin-top: .1rem;
+                    width: 2.2rem;
+                    background-color: transparent;
+                    height: 2.2rem;
                 }
         }
 }
