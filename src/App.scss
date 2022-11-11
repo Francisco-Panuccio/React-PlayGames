@@ -327,10 +327,13 @@
 
 .tituloCart {
     font-size: 3.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem 0;
+    border: .1rem solid white;
+    width: fit-content;
+    font-family: 'Pretendo', sans-serif;
+    background-color: #F7F7F7;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5rem;
 }
 
 .cart {

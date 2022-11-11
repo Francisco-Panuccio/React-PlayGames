@@ -5,8 +5,12 @@ import { CartContext } from "./CartContext";
 const ItemDetail = (props) => {
     const cartItems = useContext(CartContext);
 
-    const onCart = (juego) => {
-        cartItems.addItem(juego);
+    const onCart = () => {
+        cartItems.addItem(props.id, props.juego, props.caratula, props.precio, props.cantidad);
+    }
+
+    const onCartCount = (cantidad) => {
+        cartItems.addItem(props.cantidad);
     }
 
     return(
@@ -18,7 +22,7 @@ const ItemDetail = (props) => {
             <p className="descripcion">{props.descripcion}</p>
             <div className="precioBotones">
                 <span className="precio">Precio: {"$" + props.precio?.toLocaleString()}</span>
-                <ItemCount onCart={onCart(cartItems)}/>
+                <ItemCount onCartCount={onCartCount}/>
             </div>
         </>
     )

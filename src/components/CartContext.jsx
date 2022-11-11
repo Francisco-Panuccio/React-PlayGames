@@ -1,19 +1,17 @@
 import { useState, createContext } from "react";
-import { useParams } from "react-router-dom";
 
 export const CartContext = createContext();
 
 const CartContextProvider = (props) => {
     const [cartList, setCartList] = useState([]);
-    const { idItem } = useParams();
 
-    const addItem = (juego, cant) => {
-        if(cartList.find((game) => game.id === parseInte(idItem))) {
-            SetCant (cant + 1);
+    const addItem = (item, cantidad) => {
+        if(cartList.some((game) => game.id === item.id)) {
+            console.log("El producto se encuentra en el carrito");
         } else {
             setCartList([
                 ...cartList,
-                juego
+                item
             ]);
         }
     }
