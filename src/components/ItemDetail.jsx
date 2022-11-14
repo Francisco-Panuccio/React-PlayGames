@@ -6,11 +6,11 @@ const ItemDetail = (props) => {
     const cartItems = useContext(CartContext);
 
     const onCart = () => {
-        cartItems.addItem(props.id, props.juego, props.caratula, props.precio, props.cantidad);
+        cartItems.isInCart();
     }
 
     const onCartCount = (cantidad) => {
-        cartItems.addItem(props.cantidad);
+        cartItems.isInCart(props.cantidad);
     }
 
     return(
@@ -22,7 +22,7 @@ const ItemDetail = (props) => {
             <p className="descripcion">{props.descripcion}</p>
             <div className="precioBotones">
                 <span className="precio">Precio: {"$" + props.precio?.toLocaleString()}</span>
-                <ItemCount onCartCount={onCartCount}/>
+                <ItemCount onCart={onCart} onCartCount={onCartCount}/>
             </div>
         </>
     )
