@@ -4,7 +4,6 @@
         "empresa": "PlayStation",
         "juego": "Marvel's Spider-Man",
         "caratula": "/imagenes/spiderman_venta.jpg",
-        "cantidad": 9,
         "descripcion": "Explora un capítulo nuevo del universo de Marvel’s Spider-Man en la piel de un curtido Peter Parker. Protagonizado por uno de los superhéroes más emblemáticos del mundo, Marvel's Spider-Man presenta las habilidades acrobáticas, la improvisación y las telarañas que caracterizan al trepamuros, y añade mecánicas jamás vistas en un juego de Spider-Man. Desde el parkour hasta las interacciones según el entorno, pasando por el nuevo sistema de combate y una acción espectacular, jugarás con Spider-Man como nunca antes has hecho hasta ahora.",
         "precio": 10000
     },
@@ -13,7 +12,6 @@
         "empresa": "PlayStation",
         "juego": "FIFA 23",
         "caratula": "/imagenes/FIFA_venta.jpg",
-        "cantidad": 9,
         "descripcion": "FIFA 23 nos acerca a The World's Game con la tecnología HyperMotion2 que ofrece una experiencia de juego aún más realista, la FIFA World Cup™ masculina y femenina disponibles durante la temporada, clubes femeninos, función de juego cruzado* y mucho más.",
         "precio": 20000
     },
@@ -22,7 +20,6 @@
         "empresa": "PlayStation",
         "juego": "The Last of Us: Part II",
         "caratula": "/imagenes/last_venta.png",
-        "cantidad": 9,
         "descripcion": "Cinco años después de su peligroso viaje a través de unos Estados Unidos pospandemia, Ellie y Joel logran establecerse en Jackson, Wyoming. Vivir entre una próspera comunidad de sobrevivientes les ha concedido paz y estabilidad, a pesar de la amenaza constante de los infectados y de otros sobrevivientes más desesperados. Cuando un evento violento interrumpe esa paz, Ellie se embarca en un viaje incesante para obtener justicia y llegar a un cierre.",
         "precio": 16000
     },
@@ -31,7 +28,6 @@
         "empresa": "PlayStation",
         "juego": "God of War: Ragnarok",
         "caratula": "/imagenes/god_venta.png",
-        "cantidad": 9,
         "descripcion": "Fimbulvetr ya está en camino. Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo. En el camino explorarán paisajes increíbles y míticos, y se enfrentarán a aterradores enemigos en la forma de dioses nórdicos y monstruos. La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos.",
         "precio": 20000
     },
@@ -40,7 +36,6 @@
         "empresa": "PlayStation",
         "juego": "Horizon Zero Dawn",
         "caratula": "/imagenes/horizon_venta.jpg",
-        "cantidad": 9,
         "descripcion": "En una era en la cual las máquinas deambulan libres por la tierra y la humanidad ya no es la especie dominante, una joven cazadora llamada Aloy se embarca en un viaje para descubrir su destino. En un exuberante mundo postapocalíptico donde la naturaleza ha reclamado las ruinas de una civilización olvidada, los remanentes de la humanidad viven en primitivas tribus cazadoras-recolectoras. Su dominio sobre esta nueva tierra salvaje ha sido usurpado por las máquinas, temibles criaturas mecánicas de origen desconocido.",
         "precio": 6000
     },
@@ -49,7 +44,6 @@
         "empresa": "PlayStation",
         "juego": "Uncharted 4: A Thief's End",
         "caratula": "/imagenes/uncharted_venta.jpg",
-        "cantidad": 9,
         "descripcion": "Muchos años después de su última aventura, el cazafortunas jubilado, Nathan Drake, es obligado a regresar al mundo de ladrones. Con riesgos mucho más personales, Drake comienza un viaje por el mundo en busca de una conspiración histórica detrás de un tesoro de pirata legendario. Su mayor aventura pondrá a prueba sus límites físicos, su poder de decisión, y por último aquello que es capaz de sacrificar para salvar a las personas que ama.",
         "precio": 6000
     },
@@ -58,7 +52,6 @@
         "empresa": "Nintendo",
         "juego": "Mario Kart 8 Deluxe",
         "caratula": "/imagenes/mario_venta.jpg",
-        "cantidad": 9,
         "descripcion": "¡Calienta motores en la versión definitiva de Mario Kart™ 8 y juega donde y cuando quieras! Compite con tus amigos en carreras o en el modo batalla, que incluye circuitos nuevos y otros ya conocidos. Juega en el modo local y en 1080p en partidas de hasta 4 jugadores en el modo televisor. Además, ¡los inklings aparecen como personajes invitados junto con otro personajes de juegos anteriores, como el Rey Bú, Huesitos y Bowser Jr!",
         "precio": 10000
     },
@@ -67,7 +60,6 @@
         "empresa": "Nintendo",
         "juego": "Animal Crossing: New Horizons",
         "caratula": "/imagenes/animal_venta.jpg",
-        "cantidad": 9,
         "descripcion": "Escapa a una isla desierta y crea tu propio paraíso mientras exploras, creas y personalizas en el juego Animal Crossing: New Horizons. Tu isla cuenta con riquezas naturales que podrás utilizar para construir de todo, desde herramientas hasta objetos que harán tu vida más placentera. Podrás cazar insectos al amanecer, decorar tu pequeño paraíso durante el día o disfrutar del atardecer en la playa mientras pescas en el océano. La hora del día y la estación coinciden con las de la vida real, así que cada día en la isla es una oportunidad para encontrar y descubrir sorpresas.",
         "precio": 20000
     },
@@ -76,7 +68,6 @@
         "empresa": "Nintendo",
         "juego": "Super Smash Bros: Ultimate",
         "caratula": "/imagenes/smash_venta.jpg",
-        "cantidad": 9,
         "descripcion": "¡Un auténtico duelo de titanes de los videojuegos que podrás jugar cuando quieras y donde quieras! Lanza a tus rivales del escenario usando uno de los nuevos personajes como Simon Belmont o King K. Rool que se unen a Inkling, Ridley y a todos los combatientes presentes en la historia de Super Smash Bros. Disfruta de la velocidad mejorada y combate en los nuevos escenarios basados en las series de Castlevania, Super Mario Odyssey y otras.",
         "precio": 18000
     },
@@ -85,7 +76,6 @@
         "empresa": "Nintendo",
         "juego": "The Legend of Zelda: Breath of the Wild",
         "caratula": "/imagenes/zelda_venta.jpg",
-        "cantidad": 9,
         "descripcion": "Olvida todo lo que sabes acerca de los juegos de la serie The Legend of Zelda. Explora y descubre un mundo lleno de aventuras en The Legend of Zelda: Breath of the Wild, una nueva saga que rompe los esquemas de la aclamada serie. Viaja a través de praderas y bosques, y alcanza cimas de montañas mientras descubres cómo cayó en la ruina el reino de Hyrule en esta emocionante aventura al aire libre.",
         "precio": 18000
     },
@@ -94,7 +84,6 @@
         "empresa": "Nintendo",
         "juego": "Pokémon Sword",
         "caratula": "/imagenes/pokemon_venta.jpg",
-        "cantidad": 9,
         "descripcion": "Una nueva generación de Pokémon llega a la consola Nintendo Switch™. Inicia tu aventura como un entrenador Pokémon al seleccionar a uno de los tres nuevos compañeros Pokémon: Grookey, Scorbunny o Sobble. Luego embárcate en un viaje por la nueva región de Galar donde te enfrentarás al problemático Team Yell, ¡mientras revelas el misterio detrás de los Pokémon legendarios Zacian y Zamazenta!",
         "precio": 17000
     },
@@ -103,7 +92,6 @@
         "empresa": "Nintendo",
         "juego": "Super Mario Odyssey",
         "caratula": "/imagenes/odyssey_venta.jpg",
-        "cantidad": 9,
         "descripcion": "Explora increíbles lugares lejos del reino Champiñón al unirte a Mario y su nuevo amigo Cappy en una increíble aventura al mejor estilo trotamundos en 3D. Usa asombrosas habilidades como: el poder de capturar y controlar objetos, animales y enemigos; para conseguir energilunas necesarias para recargar la nave Odyssey y salvar a la princesa Peach de los planes de boda de Bowser.",
         "precio": 15000
     },
@@ -112,7 +100,6 @@
         "empresa": "Xbox",
         "juego": "Forza Horizon 5 Premium Edition",
         "caratula": "/imagenes/forza_venta.webp",
-        "cantidad": 9,
         "descripcion": "¡La aventura Horizon definitiva te espera! Explora los vibrantes paisajes de mundo abierto en constante evolución situado en México, y disfruta de una acción de conducción ilimitada y divertida con cientos de los mejores coches del mundo.",
         "precio": 10000
     },
@@ -121,7 +108,6 @@
         "empresa": "Xbox",
         "juego": "Halo Infinite (Campaign)",
         "caratula": "/imagenes/halo_venta.webp",
-        "cantidad": 9,
         "descripcion": "¡La aventura Horizon definitiva te espera! Explora los vibrantes paisajes de mundo abierto en constante evolución situado en México, y disfruta de una acción de conducción ilimitada y divertida con cientos de los mejores coches del mundo.",
         "precio": 8000
     },
@@ -130,7 +116,6 @@
         "empresa": "Xbox",
         "juego": "COD: Modern Warfare II - Vault Edition",
         "caratula": "/imagenes/call_venta.webp",
-        "cantidad": 9,
         "descripcion": "En Call of Duty®: Modern Warfare® II, los jugadores se verán inmersos en un conflicto a escala global sin precedentes que incluye el regreso de Operadores icónicos de la fuerza operativa 141. Desde operaciones tácticas de infiltración a pequeña escala hasta misiones altamente secretas, los jugadores se desplegarán con amigos en una experiencia inmersiva. Modern Warfare® II cuenta con una campaña mundial de un jugador, un combate Multijugador envolvente y un modo de juego evolucionado de Operaciones Especiales tácticas y cooperativas.",
         "precio": 10000
     },
@@ -139,7 +124,6 @@
         "empresa": "Xbox",
         "juego": "Star Ocean: The Divine Force",
         "caratula": "/imagenes/star_venta.jpg",
-        "cantidad": 9,
         "descripcion": "Square Enix y Tri-Ace presentan el último título de la saga de RPG Star Ocean. Puedes moverte en tres dimensiones mientras vuelas por el cielo y atraviesas tridimensionalmente uno de los escenarios más grandes de la saga. Vuela por los alrededores y recorre los tramos rocosos y los tejados de los edificios de la ciudad, o salta de un acantilado para entrar directamente en combate: ¡tendrás más libertad para explorar y combatir!",
         "precio": 7000
     },
@@ -148,7 +132,6 @@
         "empresa": "Xbox",
         "juego": "A Plague Tale: Requiem",
         "caratula": "/imagenes/plague_venta.webp",
-        "cantidad": 9,
         "descripcion": "Vive una aventura desgarradora por un mundo asombroso y despiadado, y descubre el precio de salvar a tus seres queridos en una lucha por la supervivencia. Ataca desde las sombras o desata un infierno con armas, herramientas y poderes sobrenaturales.",
         "precio": 13000
     },
@@ -157,7 +140,6 @@
         "empresa": "Xbox",
         "juego": "Mortal Kombat 11 Ultimate",
         "caratula": "/imagenes/mortal_venta.jpeg",
-        "cantidad": 9,
         "descripcion": "MK ha regresado mejor que nunca en esta entrega de la icónica saga. Las nuevas variantes de los personajes te ofrecen un control de tus kombatientes sin precedentes, ya que podrás personalizarlos como tú quieras. El motor gráfico, además de mostrar con gran detalle cada destrucción craneal y ocular, te acercará tanto al kombate que casi podrás sentirlo. Y eso no es todo: las cinemáticas del modo Historia te traen a los kombatientes klásicos y a nuevos personajes, que continuarán esta épica saga creada hace 25 años.",
         "precio": 7000
     }

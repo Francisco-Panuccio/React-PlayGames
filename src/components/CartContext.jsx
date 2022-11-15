@@ -10,8 +10,16 @@ const CartContextProvider = (props) => {
     }
     
     const addToCart = (item, cantidad) => {
-        if(isInCart) {
+        if(isInCart(item.id)) {
             console.log("Agregado");
+            const carritoActualizado = cartList.map((prod) =>{
+                if(prod.id === item.id) {
+                    return {...prod, quantity:prod.quantity + cantidad}
+                } else {
+                    return prod;
+                }
+            })
+            setCartList(carritoActualizado);
         } else {
             const purchase = {...item, quantity:cantidad}
             setCartList([...cartList, purchase]);
@@ -23,7 +31,7 @@ const CartContextProvider = (props) => {
     }
 
     const deleteItem = (id) => {
-        setCartList(cart.filter((item) => item.id !== id))
+        setCartList(cartList.filter((item) => item.id !== id))
     }
 
     return(

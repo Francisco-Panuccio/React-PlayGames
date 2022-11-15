@@ -1,27 +1,35 @@
 import ItemCount from "./ItemCount";
-import { useContext } from "react";
+import Icono_Cart from "../iconos/cart_icon.svg";
+import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
 import { CartContext } from "./CartContext";
 
-const ItemDetail = (props) => {
-    console.log(props);
-
+const ItemDetail = ({juego, caratula, descripcion, precio, id}) => {
+    const [compra, setCompra] = useState(false);
     const { addToCart } = useContext(CartContext);
 
-    const onAdd = (props, count) => {
+    const onAdd = (count) => {
+        let item= {
+            id,
+            juego,
+            caratula,
+            precio
+        }
         console.log(`Agregaste ${count} de items`);
-        addToCart(props, count);
+        addToCart(item, count);
+        setCompra(true);
     }
 
     return(
         <>
             <div className="divTitular">
-                <p className="titular">{props.juego}</p>
+                <p className="titular">{juego}</p>
             </div>
-            <img src={props.caratula} alt={props.juego}/>
-            <p className="descripcion">{props.descripcion}</p>
+            <img src={caratula} alt={juego}/>
+            <p className="descripcion">{descripcion}</p>
             <div className="precioBotones">
-                <span className="precio">Precio: {"$" + props.precio?.toLocaleString()}</span>
-                <ItemCount onAdd={onAdd}/>
+                <span className="precio">Precio: {"$" + precio?.toLocaleString()}</span>
+                {compra ? <Link to="/Cart"><button className="checkout"><img src={Icono_Cart}/></button></Link> : <ItemCount onAdd={onAdd}/>}
             </div>
         </>
     )
