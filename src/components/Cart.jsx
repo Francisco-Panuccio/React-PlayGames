@@ -4,12 +4,21 @@ import EmptyCart from "./EmptyCart";
 import ArrayCart from "./ArrayCart";
 
 const Cart = () => {
-const cartItems = useContext(CartContext);
+const {cartList} = useContext(CartContext);
 
     return (
         <> 
             {
-                cartItems.cartList.length === 0 ? <EmptyCart/> : <ArrayCart/>
+                cartList.length === 0 ? <EmptyCart/>
+                : cartList.map(item => (
+                    <ArrayCart
+                        id={item.id}
+                        key={item.id}
+                        caratula={item.caratula}
+                        cantidad={item.count}
+                        juego={item.juego}
+                        precio={item.precio}
+                    />))     
             }
         </>
     ) 

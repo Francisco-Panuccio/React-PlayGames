@@ -1,17 +1,8 @@
-import { useState, useContext } from "react";
 import Delete from "../iconos/delete.svg";
 import minus from "../iconos/minus.svg";
 import plus from "../iconos/plus.svg";
-import { CartContext } from "./CartContext";
 
 const ArrayCart = (props) => {
-    const cartItems = useContext(CartContext);
-    const [cant, setCant] = useState(0);
-
-    valueCant = () => {
-        cartItems.addItem(cant);
-    }
-
     return (
         <>
             <h1 className="tituloCart">Carrito de Compras</h1>
