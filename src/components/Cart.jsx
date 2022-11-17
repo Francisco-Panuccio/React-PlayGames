@@ -32,7 +32,15 @@ const Cart = () => {
                         juego={item.juego}
                         precio={item.precio}
                     />)) }
-                    <EndCart/>
+                    {
+                        cartList.map(game => (
+                        <EndCart
+                            precio={game.precio}
+                            quantity={game.quantity}
+                            total={game.precio * game.quantity}
+                        />
+                        ))
+                    }
                 </>
             }
         </>

@@ -12,7 +12,7 @@ const CartContextProvider = (props) => {
     const addToCart = (item, cantidad) => {
         if(isInCart(item.id)) {
             const carritoActualizado = cartList.map((prod) =>{
-                if(prod.id === item.id) {
+                if(prod.no === item.id) {
                     return {...prod, quantity:prod.quantity + cantidad}
                 } else {
                     return prod;
@@ -21,6 +21,7 @@ const CartContextProvider = (props) => {
             setCartList(carritoActualizado);
         } else {
             const purchase = {...item, quantity:cantidad}
+            console.log({...item});
             setCartList([...cartList, purchase]);
         }
     }
@@ -37,7 +38,6 @@ const CartContextProvider = (props) => {
         const alerts = cartList.map((cant) => cant.quantity);
         return alerts.reduce((pV, cV) => pV + cV, 0);
     }
-
 
     return(
         <>

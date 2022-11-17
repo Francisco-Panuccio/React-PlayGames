@@ -503,7 +503,7 @@
     align-items: center;
     position: fixed;
     right: 0;
-    top: 31.5rem;
+    top: 31.2rem;
     background-color: #dcdcdc;
     border: solid .1rem white;
     border-radius: 1rem;
@@ -513,6 +513,12 @@
         .total {
             color: black;
             font-size: 1.5rem;
+                .totalInput {
+                    pointer-events: none;
+                    width: 6rem;
+                    background: none;
+                    border: none;
+                }
         }
         .endPurchase {
             border-radius: 1rem;

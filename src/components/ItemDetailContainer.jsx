@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { customFetch } from "../functions/customFetch";
-import videojuegos from "./json/videojuegos.json";
+import { collection, doc, getDoc } from "firebase/firestore"; 
+import { db } from "../functions/firebaseConfig";
 import Spinner from "./Spinner";
 import ItemDetail from "./ItemDetail";
 
@@ -10,15 +10,19 @@ const ItemDetailContainer = () => {
     const [loading, setLoading] = useState(true);
     const { idItem } = useParams();
 
-    useEffect(() => {
-        customFetch(2000, videojuegos)
-            .then(response => {
-                setJuego(response.find(item => item.id === parseInt(idItem)));
-                setLoading(false);
-            })
-            .catch(error => console.log(error))
-            .finally(() => console.log("Proceso Finalizado"))
-    }, [])
+    useEffect(()=>{
+        const coleccionProd = collection(db, "videojuegos")
+        const referenciaDoc = doc(coleccionProd, idItem)
+        getDoc(referenciaDoc)
+        .then((result)=>{
+          setJuego({
+            id:result.id,
+            ...result.data()
+          })
+        })
+        .catch((error)=> console.log(error))
+        .finally(()=> setLoading(false))
+      }, [idItem])
 
     return (
         <>

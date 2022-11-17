@@ -1,29 +1,35 @@
 import { useState, useEffect } from "react";
-import { customFetch } from "../functions/customFetch";
+import { collection, getDocs } from "firebase/firestore"; 
+import { db } from "../functions/firebaseConfig"
 import AllGames from "./AllGames";
-import videojuegos from "./json/videojuegos.json";
+import Spinner from "./Spinner";
 
 const AllGamesContainer = () => {
     const [products,setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-    function totalFetchList() {
-        customFetch(0, videojuegos)
-            .then(response => {
-                setProducts(response);
+    useEffect(()=>{
+        const coleccionProd2 = collection(db, "videojuegos")
+        getDocs(coleccionProd2)
+        .then((result)=>{
+            const all = result.docs.map((prod)=>{
+                return{
+                    id:prod.id,
+                  ...prod.data()
+                }
             })
-            .catch(error => console.log(error))
-            .finally(() => console.log("Proceso Finalizado"))
-    }
-
-    useEffect(() => {
-        totalFetchList();
-    });
+            setProducts(all)
+        })
+        .catch((error)=> console.log(error))
+        .finally(()=> setLoading(false))
+      });
 
     return (
         <>
             <div className="item">
                 {
-                    products.map(game => (
+                    loading ? <Spinner/>
+                    : products.map(game => (
                         <AllGames
                             id={game.id}
                             key={game.id}

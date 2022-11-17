@@ -1,10 +1,20 @@
-import Items from "./containers/Items"
+import Item from "./Item"
 
-const ItemList = () => {
+const ItemList = ({games}) => {
     return (
         <>
             <div className="item">
-                <Items/>
+                {
+                    games.map(item => (
+                        <Item
+                            id={item.id}
+                            key={item.id}
+                            caratula={item.caratula}
+                            juego={item.juego}
+                            precio={item.precio}
+                        />
+                    ))
+                }
             </div>
         </>
     )
