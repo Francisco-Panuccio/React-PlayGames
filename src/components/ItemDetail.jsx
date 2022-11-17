@@ -15,7 +15,6 @@ const ItemDetail = ({juego, caratula, descripcion, precio, id}) => {
             caratula,
             precio
         }
-        console.log(`Agregaste ${count} de items`);
         addToCart(item, count);
         setCompra(true);
     }

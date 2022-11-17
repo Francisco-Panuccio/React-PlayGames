@@ -3,33 +3,33 @@ import { useContext } from "react";
 import { CartContext } from "./CartContext";
 import { Link } from "react-router-dom";
 
-const Item = ({juego, caratula, precio, id}) => {
+const AllGames = ({juego, caratula, precio, id}) => {
     const { addToCart, alert } = useContext(CartContext);
 
-    const onAdd2 = () => {
+    const onAdd3 = () => {
         let countDefault = 1;
-        let game= {
+        let games= {
             id,
             juego,
             caratula,
             precio
         }
-        addToCart(game, countDefault);
+        addToCart(games, countDefault);
     }
 
     return (
-        <>
+        <>  
             <div className="div1">
                 <img src={caratula} alt={juego} />
                 <span className="nombre">{juego}</span>
-                <span className="precio">Precio: {"$" + precio.toLocaleString()}</span>
+                <span className="precio">Precio: {"$" + precio?.toLocaleString()}</span>
                 <div className="div2">
-                    <button onClick={() => {onAdd2(), alert()}} className="compra">Comprar</button>
-                    <Link to={`/item/${id}`}><button className="detalles"><img src={eye} className="ojo"/></button></Link>
+                    <button onClick={() => {onAdd3(), alert()}} className="compra">Comprar</button>
+                    <Link to={`/item/${id}`}><button className="detalles"><img src={eye} className="ojo" /></button></Link>
                 </div>
             </div>
         </>
     )
 }
 
-export default Item;
+export default AllGames;

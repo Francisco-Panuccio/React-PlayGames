@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 import Delete from "../iconos/delete.svg";
 import EmptyCart from "./EmptyCart";
 import ArrayCart from "./ArrayCart";
+import EndCart from "./EndCart";
 
 const Cart = () => {
-const {cartList, removeList} = useContext(CartContext);
+    const {cartList, removeList} = useContext(CartContext);
 
     return (
         <> 
@@ -16,7 +17,7 @@ const {cartList, removeList} = useContext(CartContext);
                     <h1 className="tituloCart">Carrito de Compras</h1>
                     <div className="cartFull">
                         <div className="continue">
-                            <Link to="/"><button>Continuar Comprando</button></Link>
+                            <Link to="/allGames"><button>Continuar Comprando</button></Link>
                         </div>
                         <div className="emptyAll">
                             <button onClick={removeList}>Limpiar Carrito:<img src={Delete} alt="Limpiar Carrito" /></button>
@@ -31,10 +32,7 @@ const {cartList, removeList} = useContext(CartContext);
                         juego={item.juego}
                         precio={item.precio}
                     />)) }
-                    <div className="purchase">
-                        <p className="total">Total: </p>
-                        <button className="endPurchase">Terminar Compra</button>  
-                    </div> 
+                    <EndCart/>
                 </>
             }
         </>

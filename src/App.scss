@@ -85,8 +85,12 @@
 }
 
 .notificacion {
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    text-align: center;
+    padding: 0 0 .2rem 0;
+    border: none;
+    font-size: 1rem;
     border-radius: 100%;
     background-color: red;
     position: absolute;
@@ -132,12 +136,6 @@
     border-radius: .5rem;
     justify-content: center;
     align-items: center;
-        img {
-            width: 24rem;
-            height: 27rem;
-            border: .2rem solid black;
-            border-radius: 1rem 1rem 0 0;
-        }
         .div1 {
             display: flex;
             flex-flow: column wrap;
@@ -148,6 +146,12 @@
             border-radius: 1rem;
             margin: 3rem;
             width: 23.9rem;
+                img {
+                    width: 24rem;
+                    height: 27rem;
+                    border: .2rem solid black;
+                    border-radius: 1rem 1rem 0 0;
+                }
                 .nombre {
                     font-family: 'Times New Roman', Times, serif;
                     font-size: 1.3rem;
@@ -264,6 +268,7 @@
                     font-weight: 600;
                     color: #E60012;
                     text-shadow: #E60012 0px 0px 2px;
+                    margin-top: 1rem;
                 }
                 .botones {
                     .botonIzq {
@@ -345,11 +350,12 @@
 /* EmptyCart */
 
 .tituloCart {
+    background-color: black;
+    color: #F7F7F7;
     font-size: 3.5rem;
     border: .1rem solid white;
     width: fit-content;
     font-family: 'Pretendo', sans-serif;
-    background-color: #F7F7F7;
     margin: 2rem auto 0 auto;
     padding: 1rem;
     border-radius: 5rem;
@@ -357,18 +363,21 @@
 
 .cart {
     display: flex;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    justify-content: center; 
     align-items: center;
-    margin: 3rem 5rem 40rem 5rem;
+    margin: 2rem 0 40rem 0;
         .continue {
             display: flex;
                 button {
                     padding: .5rem;
                     border-radius: 2rem;
+                    margin: 0 0 1.5rem 0;
                     text-align: center;
                 }
         }
         .empty {
+            font-size: 1.2rem;
             display: block;
             color: white;
         }
@@ -409,12 +418,9 @@
 }
 
 .arrayCart {
-/*     display: grid;
-    grid-template-columns: 1fr 1fr 1fr .5fr;
-    align-items: center;
-    justify-items: center; */
     display: flex;
     align-items: center;
+    width: 85rem;
     margin: 0 4rem 4rem 4rem;
     background-color: black;
     border: .1rem solid white;
@@ -432,10 +438,9 @@
             display: flex;
             flex-flow: column wrap;
             justify-content: center;
-            justify-self: start;
             align-items: center;
-            margin-right: 20rem;
-            width: 20rem;
+            margin: 0 6rem 0 5rem;
+            width: 30rem;
             height: 10rem;
                 .nameCart {
                     font-size: 2rem;
@@ -454,7 +459,7 @@
             display: flex;
             align-items: center;
             justify-self: end;
-            margin: auto;
+            margin-right: 8rem;
                 p {
                     font-size: 2rem;
                     color: white;
@@ -493,17 +498,28 @@
 }
 
 .purchase {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 31.5rem;
+    background-color: #dcdcdc;
     border: solid .1rem white;
+    border-radius: 1rem;
     width: fit-content;
-    padding: 2rem;
-    margin-bottom: 4rem;
+    padding: 2rem 4rem;
+    margin: 0 4rem;
         .total {
-            color: white;
+            color: black;
             font-size: 1.5rem;
         }
         .endPurchase {
-            border-radius: .5rem;
+            border-radius: 1rem;
+            background-color: black;
+            color: white;
             font-size: 1.2rem;
+            padding: .5rem 1rem;
         }
 }
 

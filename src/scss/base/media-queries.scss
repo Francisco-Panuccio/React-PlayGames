@@ -1,3 +1,26 @@
+@media only screen and (max-width: 1852px) {
+    .arrayCart {
+        width: 75rem;
+            .npCart {
+                margin: 0 5rem 0 2rem;
+            }
+            .quantity {
+                margin-right: 5rem;
+            }
+    }
+    
+    .purchase {
+        padding: 2rem 4rem;
+        margin-right: 3rem;
+            .total {
+                font-size: 1.5rem;
+            }
+            .endPurchase {
+                font-size: 1.2rem;
+            }
+    }
+}
+
 @media only screen and (max-width: 1680px) {
     .listas {
         div {
@@ -16,6 +39,32 @@
             img {
                 width: 45rem;
                 height: 30rem;
+            }
+    }
+
+    .arrayCart {
+        width: 60rem;
+            .npCart {
+                margin: 0 4rem 0 2rem;
+                width: 20rem;
+                height: 15rem;
+                    .priceCart, .nameCart {
+                        font-size: 1.8rem;
+                    }
+            }
+            .quantity {
+                margin-right: 3rem;
+            }
+    }
+    
+    .purchase {
+        padding: 2rem 4rem;
+        margin-right: 3rem;
+            .total {
+                font-size: 1.5rem;
+            }
+            .endPurchase {
+                font-size: 1.2rem;
             }
     }
 
@@ -41,6 +90,41 @@
     }
 }
 
+@media only screen and (max-width: 1428px) {
+    .cartFull {
+        justify-content: space-evenly;
+    }
+
+    .arrayCart {
+        width: 65rem;
+        margin: 0 auto 4rem auto;
+            .npCart {
+                margin: 0 5rem 0 4rem;
+                width: 20rem;
+                height: 15rem;
+                    .priceCart, .nameCart {
+                        font-size: 1.8rem;
+                    }
+            }
+            .quantity {
+                margin-right: 4rem;
+            }
+    }
+    
+    .purchase {
+        display: flex;
+        flex-flow: column wrap;
+        position: unset;    
+        margin: 0 auto 2rem auto;
+            .total {
+                font-size: 1.5rem;
+            }
+            .endPurchase {
+                font-size: 1.2rem;
+            }
+    } 
+}
+
 @media only screen and (max-width: 1300px) {    
     .headerTitle {
         font-size: 2.8em;
@@ -55,12 +139,12 @@
     }
 
     .item {
-        img {
-            width: 20rem;
-            height: 22rem;
-        }
         .div1 {
             width: 20rem;
+                img {
+                    width: 20rem;
+                    height: 22rem;
+                }
                 .nombre {
                     font-size: 1rem;
                     font-weight: 600;
@@ -94,6 +178,45 @@
             img {
                 width: 40rem;
                 height: 30rem;
+            }
+    }
+
+    .arrayCart {
+        width: 50rem;
+        height: 15rem;
+        padding: 1rem 2rem;
+            img {
+                width: 15rem;
+                height: 12rem;
+            }
+            .npCart {
+                margin: 0 3rem 0 2rem;
+                width: 20rem;
+                height: 15rem;
+                    .priceCart, .nameCart {
+                        font-size: 1.5rem;
+                    }
+            }
+            .quantity {
+                margin-right: 2rem;
+                    p {
+                        font-size: 1.5rem;
+                        margin-top: .5rem;
+                    }
+                .cantidades {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    font-size: 1rem;
+                }
+            }
+            .delete {
+                width: 3.5rem;
+                height: 3rem;
+                    img {
+                        margin: 0 0 .1rem 0;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
             }
     }
 }
@@ -207,6 +330,14 @@
                     }
             }
     }
+
+    .checkout {
+            img {
+                width: 3rem;
+                margin: 0;
+                height: 3rem;
+            }
+    }
 }
 
 @media only screen and (max-width: 850px) {
@@ -272,6 +403,48 @@
         height: 10rem;
     }
 
+    .tituloCart {
+        font-size: 3rem;
+    }
+
+    .arrayCart {
+        flex-flow: column;
+        justify-content: center;
+        padding: 1.8rem 2rem 1rem 2rem;
+        width: 20rem;
+        height: 35rem;
+            img {
+                width: 15rem;
+                height: 15rem;
+                margin-bottom: .8rem;
+            }
+            .npCart {
+                margin: 0;
+                width: 20rem;
+                height: 8rem;
+                    .priceCart, .nameCart {
+                        font-size: 1.2rem;
+                    }
+            }
+            .quantity {
+                margin: 0;
+                    p {
+                        font-size: 1.3rem;
+                        margin-top: .5rem;
+                    }
+                .cantidades {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    font-size: 1rem;
+                }
+            }
+            .delete {
+                margin: auto;
+                width: 3rem;
+                height: 3rem;
+            }
+    }
+
     footer {
         p {
             font-size: .6rem;
@@ -292,6 +465,14 @@
             }
         }
     }
+
+    .checkout {
+        img {
+            width: 3rem;
+            margin: 0;
+            height: 3rem;
+        }
+}
 }
 
 @media only screen and (max-width: 602px) {
@@ -328,14 +509,45 @@
                         text-align: center;
                     }
                     .botones {
-                        .botonIzq {
-                            margin: 0 1rem 0 3rem;
+                        margin-top: 1rem;
+                            .botonIzq {
+                                margin: 0 1rem 0 3rem;
+                            }
+                            .botonDer {
+                                margin: 0 0 0 1rem;
+                            }
                         }
-                        .botonDer {
-                            margin: 0 0 0 1rem;
-                        }
+            }
+    }
+
+    .checkout {
+        margin: 1rem 0 0 3rem;
+            img {
+                width: 3rem;
+                margin: 0;
+                height: 3rem;
+            }
+    }
+
+    .tituloCart {
+        font-size: 2.5rem;
+    }
+
+    .cartFull {
+        .continue {
+                button {
+                    font-size: 1rem;
+                }
+        }
+        .emptyAll {
+            button {
+                font-size: 1rem;
+                    img {
+                        width: 1.5rem;
+                        height: 1.5rem;
                     }
             }
+        }
     }
 }
 
@@ -365,6 +577,9 @@
     .navbar {
         display: flex;
         flex-flow: column wrap;
+            .carritoBoton {
+                margin-top: .5rem;
+            }
     }
     
     .headerTitle {
@@ -457,6 +672,40 @@
         width: 5rem;
         height: 5rem;
     }
+
+    .checkout {
+        margin: 0 3rem;
+            img {
+                width: 3rem;
+                margin: 0;
+                height: 3rem;
+            }
+    }
+
+    .tituloCart {
+        font-size: 1.5rem;
+    }
+
+    .cartFull {
+        .continue {
+                button {
+                    font-size: 1rem;
+                    padding: .3rem .5rem;
+                    margin-right: 1rem;
+                }
+        }
+        .emptyAll {
+            button {
+                font-size: 1rem;
+                padding: .2rem .5rem;
+                margin-left: 1rem;
+                    img {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -491,9 +740,11 @@
     }
 
     .item {
-        img {
-            width: 16rem;
-            height: 18rem;
+        .div1{
+            img {
+                width: 16rem;
+                height: 18rem;
+            }
         }
     }
 }

@@ -31,7 +31,6 @@ const ItemDetailContainer = () => {
                     descripcion={juego.descripcion}
                     juego={juego.juego}
                     precio={juego.precio}
-/*                     comprar={() => comprar(item.id)} */
                 />
             </div>
             }
