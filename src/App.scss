@@ -85,10 +85,9 @@
 }
 
 .notificacion {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.55rem;
+    height: 1.55rem;
     text-align: center;
-    padding: 0 0 .2rem 0;
     border: none;
     font-size: 1rem;
     border-radius: 100%;
@@ -514,12 +513,6 @@
         .total {
             color: black;
             font-size: 1.5rem;
-                .totalInput {
-                    pointer-events: none;
-                    width: 6rem;
-                    background: none;
-                    border: none;
-                }
         }
         .endPurchase {
             border-radius: 1rem;

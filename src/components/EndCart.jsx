@@ -1,23 +1,24 @@
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "./CartContext";
 
-const EndCart = () => {
+const EndCart = ({total}) => {
     const [montoTotal, setMontoTotal] = useState(0);
     const { cartList } = useContext(CartContext);
 
+    let sum = 0;
     const totalPurchase = () => {
-        const chest = cartList.filter((game) => game.total);
-        return(chest.reduce((pV, cV) => pV + cV, 0));
+        sum = sum + total;
+        console.log(sum);
     }
-    
+
     useEffect(() => {
-        setMontoTotal(totalPurchase);
-    }, [totalPurchase])
+        totalPurchase();
+    }, [])
 
     return (
         <>
             <div className="purchase">
-                <p className="total">Total: $<input className="totalInput" value={montoTotal}></input></p>
+                <p className="total">Total: ${montoTotal}</p>
                 <button className="endPurchase">Finalizar Compra</button>
             </div>
         </>
