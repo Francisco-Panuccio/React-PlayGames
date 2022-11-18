@@ -15,7 +15,6 @@ const Item = ({juego, caratula, precio, id}) => {
             precio
         }
         addToCart(game, countDefault);
-        console.log(cartList);
     }
 
     return (

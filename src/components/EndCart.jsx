@@ -1,31 +1,23 @@
-/* import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CartContext } from "./CartContext";
- */
-const EndCart = (props) => {
-/*     const [total, setTotal] = useState(0); */
-/*     const { addToCart, cartList } = useContext(CartContext); */
+
+const EndCart = () => {
+    const [montoTotal, setMontoTotal] = useState(0);
+    const { cartList } = useContext(CartContext);
+
+    const totalPurchase = () => {
+        const chest = cartList.filter((game) => game.total);
+        return(chest.reduce((pV, cV) => pV + cV, 0));
+    }
     
-/*     const totalPurchase = () => {
-        let total = cartList.find((item) => item.precio && item.quantity);
-        return((total.precio)*(total.quantity));
-    } */
-
-/*     const totalPurchase = () => {
-        const multiply = cartList.find((item) => item.precio && item.quantity);
-        console.log(multiply);
-        return((multiply.precio)*(multiply.quantity));
-    } */
-
-/*     useEffect(() => {
-        setTotal(totalPurchase);
-    }, [addToCart]) */
-
-    
+    useEffect(() => {
+        setMontoTotal(totalPurchase);
+    }, [totalPurchase])
 
     return (
         <>
             <div className="purchase">
-                <p className="total">Total: $<input className="totalInput" value={props.total}></input></p>
+                <p className="total">Total: $<input className="totalInput" value={montoTotal}></input></p>
                 <button className="endPurchase">Finalizar Compra</button>
             </div>
         </>

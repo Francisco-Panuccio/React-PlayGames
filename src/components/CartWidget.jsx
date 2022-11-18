@@ -18,7 +18,7 @@ const CartWidget = () => {
                 <button className="carritoBoton">
                     <img src={Icono_Cart} alt="Icono Carrito" className="iconoCarrito" />
                     {
-                        notificacion === 0 ? <input style={{"display":"none"}}></input> : <input className="notificacion" value={notificacion} readOnly></input>
+                        notificacion === 0 ? <input style={{"display":"none"}}></input> : <input className="notificacion" value={notificacion}></input>
                     }
                 </button>
                 </Link>
