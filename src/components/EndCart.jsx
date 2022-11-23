@@ -50,9 +50,12 @@ const EndCart = ({total}) => {
                 title: `¡Compra Realizada!`,
                 text: "Orden de Compra: " + result.id,
                 icon: `success`,
-            }),
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    encuesta()
+                }
+              }),
             removeList(),
-            encuesta()
             )
         .catch((error) => console.log(error));
     }
