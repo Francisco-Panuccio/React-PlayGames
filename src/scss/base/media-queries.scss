@@ -19,6 +19,10 @@
                 font-size: 1.2rem;
             }
     }
+
+    .swal2-popup {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 1680px) {
@@ -472,7 +476,11 @@
             margin: 0;
             height: 3rem;
         }
-}
+    }
+
+    .swal2-popup {
+        font-size: .8rem;
+    }
 }
 
 @media only screen and (max-width: 602px) {
@@ -719,6 +727,10 @@
             button {
                 margin: 44% 0;
             }
+    }
+
+    .swal2-popup {
+        font-size: .6rem;
     }
 }
 

@@ -4,7 +4,7 @@ import { CartContext } from "./CartContext";
 import { Link } from "react-router-dom";
 
 const Item = ({juego, caratula, precio, id}) => {
-    const { addToCart, alert, cartList } = useContext(CartContext);
+    const { addToCart, alert } = useContext(CartContext);
 
     const onAdd2 = () => {
         let countDefault = 1;

@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
     const { idItem } = useParams();
 
     useEffect(()=>{
-        const coleccionProd = collection(db, "videojuegos")
+        const coleccionProd = collection(db, "videojuegos");
         const referenciaDoc = doc(coleccionProd, idItem)
         getDoc(referenciaDoc)
         .then((result)=>{
