@@ -1,7 +1,7 @@
-import eye from "../iconos/eye.svg";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 import { Link } from "react-router-dom";
+import eye from "../iconos/eye.svg";
 
 const AllGames = ({juego, caratula, precio, id}) => {
     const { addToCart, alert } = useContext(CartContext);

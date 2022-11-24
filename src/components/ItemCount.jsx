@@ -1,6 +1,6 @@
+import { useState } from "react";
 import minus from "../iconos/minus.svg";
 import plus from "../iconos/plus.svg";
-import { useState } from "react";
 
 const ItemCount = ({onAdd}) => {
     const [count, Setcount] = useState(1);

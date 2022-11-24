@@ -6,6 +6,6 @@ const Main = () => {
             <Carousel/>
         </>
     )
-};
+}
 
 export default Main;

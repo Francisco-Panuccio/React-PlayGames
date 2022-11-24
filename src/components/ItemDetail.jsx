@@ -1,8 +1,8 @@
-import ItemCount from "./ItemCount";
-import Icono_Cart from "../iconos/cart_icon.svg";
 import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import { CartContext } from "./CartContext";
+import Icono_Cart from "../iconos/cart_icon.svg";
+import ItemCount from "./ItemCount";
 
 const ItemDetail = ({juego, caratula, descripcion, precio, id}) => {
     const [compra, setCompra] = useState(false);

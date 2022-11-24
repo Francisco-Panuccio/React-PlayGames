@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { collection, getDocs } from "firebase/firestore"; 
+import { collection, getDocs, orderBy, query } from "firebase/firestore"; 
 import { db } from "../functions/firebaseConfig"
 import AllGames from "./AllGames";
 import Spinner from "./Spinner";
@@ -9,7 +9,7 @@ const AllGamesContainer = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(()=>{
-        const coleccionProd2 = collection(db, "videojuegos")
+        const coleccionProd2 = query(collection(db, "videojuegos"), orderBy("empresa"))
         getDocs(coleccionProd2)
         .then((result)=>{
             const all = result.docs.map((prod)=>{
@@ -22,7 +22,7 @@ const AllGamesContainer = () => {
         })
         .catch((error)=> console.log(error))
         .finally(()=> setLoading(false))
-      });
+      }, []);
 
     return (
         <>

@@ -1,7 +1,7 @@
-import Icono_Cart from "../iconos/cart_icon.svg";
 import { useContext, useState, useEffect } from "react";
 import { CartContext } from "./CartContext";
 import { Link } from "react-router-dom";
+import Icono_Cart from "../iconos/cart_icon.svg";
 
 const CartWidget = () => {
     const [notificacion, setNotificacion] = useState(0);

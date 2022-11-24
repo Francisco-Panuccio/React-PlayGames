@@ -6,21 +6,6 @@ import { CartContext } from "./CartContext";
 const EndCart = ({total}) => {
     const { cartList, removeList } = useContext(CartContext);
 
-    const encuesta = () => {
-        Swal.fire({
-            title: 'Califícanos',
-            icon: 'question',
-            input: 'range',
-            inputLabel: '¿Qué tan satisfecho está con la página?',
-            inputAttributes: {
-              min: 0,
-              max: 100,
-              step: 1
-            },
-            inputValue: 0
-          })
-    }
-
     const createOrder = () => {
         let order = {
             buyer: {
@@ -50,22 +35,53 @@ const EndCart = ({total}) => {
                 title: `¡Compra Realizada!`,
                 text: "Orden de Compra: " + result.id,
                 icon: `success`,
+                allowOutsideClick: false,
+                allowEscapeKey: false,
             }).then((result) => {
                 if (result.isConfirmed) {
                     encuesta()
                 }
-              }),
-            removeList(),
+              }), removeList()
             )
-        .catch((error) => console.log(error));
+        .catch((error) => console.log(error))
+        .finally(() => "Proceso Finalizado")
+    }
+
+    const encuesta = () => {
+        Swal.fire({
+            title: 'Califícanos',
+            icon: 'question',
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            input: 'range',
+            inputLabel: '¿Qué tan satisfecho estás con la página?',
+            inputAttributes: {
+              min: 0,
+              max: 100,
+              step: 5
+            },
+            inputValue: 0
+          }).then((result) => {
+            if (result.value <= 25) {
+                Swal.fire('¡Gracias por tu opinión, prontamente habrán muchas mejoras!');
+            }
+            else if (result.value <= 50) {
+                Swal.fire('¡Gracias por tu opinión, en breve estaremos actualizando con nuevas mejoras!');
+            }
+            else if (result.value <= 75) {
+                Swal.fire('¡Gracias por tu opinión, implementaremos mejoras para su satisfacción!');
+            } else {
+                Swal.fire('¡Gracias por tu opinión, apreciamos el cariño a nuestra página!');
+            }
+          })
     }
 
     return (
         <>
-            <div className="purchase">
+                <div className="purchase">
                 <p className="total">Total: ${total}</p>
-                <button className="endPurchase" onClick={createOrder}>Finalizar Compra</button>
-            </div>
+                    <button className="endPurchase" onClick={createOrder}>Finalizar Compra</button>
+                </div>
         </>
     )
 }

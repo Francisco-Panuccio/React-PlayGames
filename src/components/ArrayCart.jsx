@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import Delete from "../iconos/delete.svg";
 import { CartContext } from "./CartContext";
+import Delete from "../iconos/delete.svg";
 
 const ArrayCart = (props) => {
     const { deleteItem } = useContext(CartContext);
