@@ -572,6 +572,17 @@
             }
     }
 
+    .popUp {
+        .precioBotones {
+            span {
+                margin: 0;
+            }
+            .botones {
+                margin: 0;
+            }
+        }
+    }
+
     .spinner {
         margin: 5rem auto;
     }
@@ -650,11 +661,11 @@
                 width: 20rem;
                 height: 9rem;
                     span {
-                        margin: 1.3rem 0 .5rem 0;
+                        margin: 1.3rem 0 .3rem 0;
                     }
                     .botones {
                         display: flex;
-                        margin: 0 4.5rem 0 0;
+                        margin: 0 4.5rem .5rem 0;
                             .botonIzq {
                                 margin: 0 1rem 0 4.5rem;
                                     img {
